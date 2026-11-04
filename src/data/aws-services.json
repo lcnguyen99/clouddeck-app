@@ -1,0 +1,4082 @@
+{
+  "version": 1,
+  "lastReviewed": "2026-11-04",
+  "certifications": [
+    {
+      "id": "CLF",
+      "code": "CLF-C02",
+      "name": "Cloud Practitioner",
+      "tier": "Foundational"
+    },
+    {
+      "id": "AIF",
+      "code": "AIF-C01",
+      "name": "AI Practitioner",
+      "tier": "Foundational"
+    },
+    {
+      "id": "SAA",
+      "code": "SAA-C03",
+      "name": "Solutions Architect – Associate",
+      "tier": "Associate"
+    },
+    {
+      "id": "DVA",
+      "code": "DVA-C02",
+      "name": "Developer – Associate",
+      "tier": "Associate"
+    },
+    {
+      "id": "SOA",
+      "code": "SOA-C03",
+      "name": "CloudOps Engineer – Associate",
+      "tier": "Associate"
+    },
+    {
+      "id": "DEA",
+      "code": "DEA-C01",
+      "name": "Data Engineer – Associate",
+      "tier": "Associate"
+    },
+    {
+      "id": "MLA",
+      "code": "MLA-C01",
+      "name": "Machine Learning Engineer – Associate",
+      "tier": "Associate"
+    },
+    {
+      "id": "SAP",
+      "code": "SAP-C02",
+      "name": "Solutions Architect – Professional",
+      "tier": "Professional"
+    },
+    {
+      "id": "DOP",
+      "code": "DOP-C02",
+      "name": "DevOps Engineer – Professional",
+      "tier": "Professional"
+    },
+    {
+      "id": "AIP",
+      "code": "AIP-C01",
+      "name": "Generative AI Developer – Professional",
+      "tier": "Professional"
+    },
+    {
+      "id": "ANS",
+      "code": "ANS-C01",
+      "name": "Advanced Networking – Specialty",
+      "tier": "Specialty"
+    },
+    {
+      "id": "SCS",
+      "code": "SCS-C03",
+      "name": "Security – Specialty",
+      "tier": "Specialty"
+    }
+  ],
+  "levels": [
+    "Beginner",
+    "Intermediate",
+    "Expert"
+  ],
+  "categories": [
+    {
+      "id": "compute",
+      "name": "Compute",
+      "abbr": "CPU",
+      "color": "#EA580C",
+      "description": "Virtual servers and serverless functions that run your code."
+    },
+    {
+      "id": "containers",
+      "name": "Containers",
+      "abbr": "CTR",
+      "color": "#B45309",
+      "description": "Package apps into containers and run them at scale."
+    },
+    {
+      "id": "storage",
+      "name": "Storage",
+      "abbr": "STO",
+      "color": "#16A34A",
+      "description": "Places to keep files, disks, archives and backups."
+    },
+    {
+      "id": "databases",
+      "name": "Databases",
+      "abbr": "DB",
+      "color": "#2563EB",
+      "description": "Managed SQL, NoSQL, in-memory and graph databases."
+    },
+    {
+      "id": "networking",
+      "name": "Networking & Content Delivery",
+      "abbr": "NET",
+      "color": "#7C3AED",
+      "description": "Private networks, DNS, CDNs, load balancers and hybrid links."
+    },
+    {
+      "id": "security",
+      "name": "Security, Identity & Compliance",
+      "abbr": "SEC",
+      "color": "#DC2626",
+      "description": "Control access, encrypt data and detect threats."
+    },
+    {
+      "id": "management",
+      "name": "Management & Governance",
+      "abbr": "OPS",
+      "color": "#DB2777",
+      "description": "Monitor, automate, audit and govern your AWS accounts."
+    },
+    {
+      "id": "cost",
+      "name": "Cloud Financial Management",
+      "abbr": "$",
+      "color": "#047857",
+      "description": "Understand, control and reduce your AWS bill."
+    },
+    {
+      "id": "analytics",
+      "name": "Analytics",
+      "abbr": "DATA",
+      "color": "#0D9488",
+      "description": "Query, process, stream and visualize data."
+    },
+    {
+      "id": "ml",
+      "name": "AI & Machine Learning",
+      "abbr": "AI",
+      "color": "#0891B2",
+      "description": "Generative AI, ML platforms and ready-made AI services."
+    },
+    {
+      "id": "integration",
+      "name": "Application Integration",
+      "abbr": "INT",
+      "color": "#C026D3",
+      "description": "Connect app components with queues, events and workflows."
+    },
+    {
+      "id": "devtools",
+      "name": "Developer Tools",
+      "abbr": "DEV",
+      "color": "#4F46E5",
+      "description": "Build, test, deploy and debug your software."
+    },
+    {
+      "id": "frontend",
+      "name": "Front-End Web & Mobile",
+      "abbr": "WEB",
+      "color": "#A16207",
+      "description": "Build, host and test web and mobile apps."
+    },
+    {
+      "id": "migration",
+      "name": "Migration & Transfer",
+      "abbr": "MIG",
+      "color": "#4D7C0F",
+      "description": "Move servers, databases and data into AWS."
+    },
+    {
+      "id": "iot",
+      "name": "Internet of Things",
+      "abbr": "IoT",
+      "color": "#0369A1",
+      "description": "Connect, manage and secure devices and sensors."
+    },
+    {
+      "id": "enduser",
+      "name": "End User & Business Apps",
+      "abbr": "APPS",
+      "color": "#475569",
+      "description": "Virtual desktops, contact centers, email and messaging."
+    }
+  ],
+  "services": [
+    {
+      "id": "ec2",
+      "name": "Amazon EC2",
+      "shortName": "EC2",
+      "category": "compute",
+      "level": "Beginner",
+      "definition": "Amazon Elastic Compute Cloud (EC2) lets you rent virtual computers, called instances, in the cloud. You pick the CPU, memory and operating system, and pay only while it runs.",
+      "usedFor": [
+        "Hosting websites and back-end applications",
+        "Running software that needs a full server you control",
+        "Scaling capacity up or down as traffic changes"
+      ],
+      "scenario": {
+        "company": "Brightside Bakery Co.",
+        "story": "The bakery's online ordering site ran on one old office PC. They moved it to a small EC2 instance, then switched to a bigger instance type for the December rush and back again in January."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "lambda",
+      "name": "AWS Lambda",
+      "shortName": "λ",
+      "category": "compute",
+      "level": "Beginner",
+      "definition": "Lambda runs your code without you managing any servers. You upload a function, choose what triggers it, and pay only for the milliseconds it runs.",
+      "usedFor": [
+        "Reacting to events like file uploads or database changes",
+        "Building lightweight APIs and back ends",
+        "Automating scheduled tasks and glue code"
+      ],
+      "scenario": {
+        "company": "SnapFrame",
+        "story": "Every time a user uploads a photo to SnapFrame, a Lambda function automatically creates a thumbnail. During quiet hours it costs almost nothing; on viral days it handles thousands of uploads a minute."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "MLA",
+        "SAP",
+        "DOP",
+        "AIP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "elastic-beanstalk",
+      "name": "AWS Elastic Beanstalk",
+      "shortName": "EB",
+      "category": "compute",
+      "level": "Beginner",
+      "definition": "Elastic Beanstalk takes your application code and deploys it for you, setting up servers, load balancing and scaling automatically. You focus on code, not infrastructure.",
+      "usedFor": [
+        "Deploying web apps quickly without learning every AWS service",
+        "Running Java, Python, Node.js, .NET, PHP, Ruby or Go apps",
+        "Getting built-in health monitoring and rolling updates"
+      ],
+      "scenario": {
+        "company": "TutorLink",
+        "story": "A two-person team built a tutoring marketplace in Python. They uploaded it to Elastic Beanstalk, which created the servers and load balancer, so they launched in an afternoon instead of a week."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA"
+      ]
+    },
+    {
+      "id": "lightsail",
+      "name": "Amazon Lightsail",
+      "shortName": "LS",
+      "category": "compute",
+      "level": "Beginner",
+      "definition": "Lightsail is the simplest way to get a virtual server, database or website on AWS, with a fixed, predictable monthly price.",
+      "usedFor": [
+        "Hosting simple websites, blogs and WordPress",
+        "Small business apps and dev/test servers",
+        "Learning cloud basics with a friendly console"
+      ],
+      "scenario": {
+        "company": "Maple Street Dental",
+        "story": "The dental office needed a website with a booking form. Their part-time IT helper launched a WordPress instance on Lightsail for a low flat monthly fee, with no surprise bills."
+      },
+      "certifications": [
+        "CLF",
+        "SAA"
+      ]
+    },
+    {
+      "id": "ec2-auto-scaling",
+      "name": "Amazon EC2 Auto Scaling",
+      "shortName": "ASG",
+      "category": "compute",
+      "level": "Beginner",
+      "definition": "EC2 Auto Scaling automatically adds or removes EC2 instances based on demand or a schedule, so you have enough capacity without paying for idle servers.",
+      "usedFor": [
+        "Handling traffic spikes automatically",
+        "Replacing unhealthy instances without human action",
+        "Saving money by scaling in during quiet periods"
+      ],
+      "scenario": {
+        "company": "TicketDash",
+        "story": "When concert tickets go on sale, TicketDash's traffic jumps tenfold in minutes. An Auto Scaling group grows from 4 to 40 instances, then shrinks back once the rush ends."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "batch",
+      "name": "AWS Batch",
+      "shortName": "BAT",
+      "category": "compute",
+      "level": "Intermediate",
+      "definition": "AWS Batch runs large numbers of computing jobs for you, queuing them up and picking the right amount of compute to finish them efficiently.",
+      "usedFor": [
+        "Scientific simulations and genomics processing",
+        "Rendering video or images in bulk",
+        "Overnight financial risk calculations"
+      ],
+      "scenario": {
+        "company": "HelixGen Labs",
+        "story": "HelixGen needs to analyze thousands of DNA samples each week. They submit each sample as a Batch job, and Batch spins up hundreds of instances, finishes the work, then shuts them down."
+      },
+      "certifications": [
+        "SAA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "ec2-image-builder",
+      "name": "EC2 Image Builder",
+      "shortName": "IB",
+      "category": "compute",
+      "level": "Intermediate",
+      "definition": "Image Builder automates creating, patching and testing server images (AMIs) and container images, so every new server starts from an up-to-date, secure template.",
+      "usedFor": [
+        "Building 'golden images' with your company's standard software",
+        "Applying security patches to images on a schedule",
+        "Testing images before they are used in production"
+      ],
+      "scenario": {
+        "company": "NorthBank Financial",
+        "story": "Auditors require every server to start fully patched. NorthBank uses Image Builder to produce a new hardened image every week, and Auto Scaling launches servers only from the latest image."
+      },
+      "certifications": [
+        "SOA",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "outposts",
+      "name": "AWS Outposts",
+      "shortName": "OUT",
+      "category": "compute",
+      "level": "Expert",
+      "definition": "Outposts brings AWS hardware into your own data center, so you can run AWS services on-premises with the same tools and APIs you use in the cloud.",
+      "usedFor": [
+        "Apps that need very low latency to on-site systems",
+        "Keeping data in a specific location for regulations",
+        "Gradually modernizing a data center"
+      ],
+      "scenario": {
+        "company": "Precision Motors",
+        "story": "A car factory's robots need responses in single-digit milliseconds. Precision Motors installed an Outposts rack on the factory floor to run its control software locally while managing it like the rest of AWS."
+      },
+      "certifications": [
+        "SAA",
+        "SAP",
+        "ANS"
+      ]
+    },
+    {
+      "id": "wavelength",
+      "name": "AWS Wavelength",
+      "shortName": "WL",
+      "category": "compute",
+      "level": "Expert",
+      "definition": "Wavelength places AWS compute inside telecom providers' 5G networks, so mobile apps can reach servers with extremely low delay.",
+      "usedFor": [
+        "Real-time multiplayer and cloud gaming",
+        "Live video analytics for connected devices",
+        "Augmented reality experiences on phones"
+      ],
+      "scenario": {
+        "company": "ArenaVerse",
+        "story": "ArenaVerse's AR sports game overlays live stats on a stadium view. Running its game servers in Wavelength zones cut lag enough that the overlays keep up with the action on the field."
+      },
+      "certifications": [
+        "SAP",
+        "ANS"
+      ]
+    },
+    {
+      "id": "parallelcluster",
+      "name": "AWS ParallelCluster",
+      "shortName": "PC",
+      "category": "compute",
+      "level": "Expert",
+      "definition": "ParallelCluster is an open-source tool that builds high-performance computing (HPC) clusters on AWS, like a supercomputer you can create and delete on demand.",
+      "usedFor": [
+        "Weather and climate modeling",
+        "Engineering simulations like crash tests and fluid dynamics",
+        "Large research workloads that need many connected servers"
+      ],
+      "scenario": {
+        "company": "BlueCurrent Energy",
+        "story": "Engineers at BlueCurrent simulate how wind turbines behave in storms. They spin up a 500-core cluster with ParallelCluster for a few days, then tear it down instead of buying their own supercomputer."
+      },
+      "certifications": [
+        "SAP"
+      ]
+    },
+    {
+      "id": "ecs",
+      "name": "Amazon ECS",
+      "shortName": "ECS",
+      "category": "containers",
+      "level": "Intermediate",
+      "definition": "Amazon Elastic Container Service (ECS) runs and manages Docker containers for you. You describe which containers to run, and ECS keeps them running and healthy.",
+      "usedFor": [
+        "Running microservices packaged as containers",
+        "Batch and background jobs in containers",
+        "Modernizing apps without managing a container platform"
+      ],
+      "scenario": {
+        "company": "ShopNest",
+        "story": "ShopNest split its online store into separate cart, search and payment services. Each runs as a container on ECS, so the team can update search without touching payments."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "eks",
+      "name": "Amazon EKS",
+      "shortName": "EKS",
+      "category": "containers",
+      "level": "Expert",
+      "definition": "Amazon Elastic Kubernetes Service (EKS) runs Kubernetes, the popular open-source container platform, for you, so you don't have to install or maintain its control plane.",
+      "usedFor": [
+        "Running Kubernetes apps without managing control-plane servers",
+        "Moving existing Kubernetes workloads to AWS",
+        "Running the same platform across cloud and on-premises"
+      ],
+      "scenario": {
+        "company": "StreamWave Media",
+        "story": "StreamWave already used Kubernetes in its own data center. Moving to EKS let them keep their existing tools and manifests while AWS handled the upgrades and availability of the cluster."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "fargate",
+      "name": "AWS Fargate",
+      "shortName": "FG",
+      "category": "containers",
+      "level": "Intermediate",
+      "definition": "Fargate is a serverless engine for containers: it runs your ECS or EKS containers without you choosing, patching or scaling any servers.",
+      "usedFor": [
+        "Running containers without managing EC2 instances",
+        "Workloads with unpredictable traffic",
+        "Isolating each task for stronger security"
+      ],
+      "scenario": {
+        "company": "QuickQuote Insurance",
+        "story": "QuickQuote's quote engine runs in containers. With Fargate they just set CPU and memory per task, and they no longer spend Fridays patching container host servers."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "ecr",
+      "name": "Amazon ECR",
+      "shortName": "ECR",
+      "category": "containers",
+      "level": "Beginner",
+      "definition": "Amazon Elastic Container Registry (ECR) is a private, secure place to store and share your container images, similar to a private Docker Hub.",
+      "usedFor": [
+        "Storing container images used by ECS, EKS and Lambda",
+        "Scanning images for known vulnerabilities",
+        "Sharing images across accounts and Regions"
+      ],
+      "scenario": {
+        "company": "ShopNest",
+        "story": "Every time ShopNest's build pipeline finishes, it pushes the new container image to ECR. ECR scans it for vulnerabilities before ECS is allowed to deploy it."
+      },
+      "certifications": [
+        "SAA",
+        "DVA",
+        "SOA",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "rosa",
+      "name": "Red Hat OpenShift Service on AWS",
+      "shortName": "ROSA",
+      "category": "containers",
+      "level": "Expert",
+      "definition": "ROSA is a fully managed Red Hat OpenShift container platform running on AWS, jointly supported by Red Hat and AWS.",
+      "usedFor": [
+        "Companies already standardized on OpenShift",
+        "Moving OpenShift apps from on-premises to the cloud",
+        "Enterprise Kubernetes with Red Hat tooling"
+      ],
+      "scenario": {
+        "company": "Continental Rail",
+        "story": "Continental Rail's ticketing apps ran on OpenShift in an aging data center. Moving to ROSA let developers keep the same workflows while the platform team stopped managing hardware."
+      },
+      "certifications": [
+        "SAP"
+      ]
+    },
+    {
+      "id": "s3",
+      "name": "Amazon S3",
+      "shortName": "S3",
+      "category": "storage",
+      "level": "Beginner",
+      "definition": "Amazon Simple Storage Service (S3) stores any amount of files, called objects, in containers called buckets. It is extremely durable and you pay only for what you store.",
+      "usedFor": [
+        "Storing images, videos, backups and documents",
+        "Hosting static websites",
+        "Building data lakes for analytics and machine learning"
+      ],
+      "scenario": {
+        "company": "SnapFrame",
+        "story": "SnapFrame stores billions of user photos in S3. Popular photos stay in S3 Standard, while photos untouched for a year move automatically to a cheaper storage class."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "MLA",
+        "SAP",
+        "DOP",
+        "AIP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "s3-glacier",
+      "name": "Amazon S3 Glacier",
+      "shortName": "GLA",
+      "category": "storage",
+      "level": "Beginner",
+      "definition": "S3 Glacier storage classes are very low-cost S3 storage for data you rarely need, such as archives, with retrieval times from milliseconds to hours.",
+      "usedFor": [
+        "Long-term archives kept for legal or compliance reasons",
+        "Replacing tape backups",
+        "Storing old media and research data cheaply"
+      ],
+      "scenario": {
+        "company": "Riverside Hospital",
+        "story": "The hospital must keep patient imaging for years. Scans older than 90 days move to S3 Glacier Deep Archive, cutting storage costs dramatically while still being retrievable if needed."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "ebs",
+      "name": "Amazon EBS",
+      "shortName": "EBS",
+      "category": "storage",
+      "level": "Beginner",
+      "definition": "Amazon Elastic Block Store (EBS) provides virtual hard drives, called volumes, that attach to EC2 instances and keep their data even when the instance stops.",
+      "usedFor": [
+        "Boot drives and data disks for EC2",
+        "Databases running on EC2 that need fast disks",
+        "Point-in-time backups using snapshots"
+      ],
+      "scenario": {
+        "company": "LedgerLite",
+        "story": "LedgerLite runs its accounting database on EC2 with a high-performance EBS volume. Nightly EBS snapshots let them restore the database to any recent day in minutes."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "efs",
+      "name": "Amazon EFS",
+      "shortName": "EFS",
+      "category": "storage",
+      "level": "Intermediate",
+      "definition": "Amazon Elastic File System (EFS) is a shared network drive in the cloud that many servers and containers can read and write at the same time. It grows and shrinks automatically.",
+      "usedFor": [
+        "Shared files for web servers behind a load balancer",
+        "Content management systems and home directories",
+        "Persistent storage for containers"
+      ],
+      "scenario": {
+        "company": "Pagewise Publishing",
+        "story": "Pagewise runs its CMS on six servers. All of them mount the same EFS file system, so an image uploaded through any server appears instantly on all of them."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "fsx",
+      "name": "Amazon FSx",
+      "shortName": "FSx",
+      "category": "storage",
+      "level": "Intermediate",
+      "definition": "FSx provides fully managed file systems built on popular technologies, including Windows File Server, Lustre, NetApp ONTAP and OpenZFS.",
+      "usedFor": [
+        "Windows file shares for business apps (FSx for Windows)",
+        "Very fast storage for HPC and ML (FSx for Lustre)",
+        "Moving NetApp or ZFS storage to the cloud"
+      ],
+      "scenario": {
+        "company": "Granite & Co. Architects",
+        "story": "The architecture firm's designers share huge CAD files over Windows file shares. FSx for Windows File Server gave them the same mapped drives they were used to, without an office file server."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "storage-gateway",
+      "name": "AWS Storage Gateway",
+      "shortName": "SGW",
+      "category": "storage",
+      "level": "Intermediate",
+      "definition": "Storage Gateway connects your on-premises systems to AWS storage, letting local apps save files, volumes or virtual tapes that end up in the cloud.",
+      "usedFor": [
+        "Extending office file servers into S3",
+        "Replacing physical tape backup with virtual tapes",
+        "Hybrid storage during a gradual cloud move"
+      ],
+      "scenario": {
+        "company": "Hartwell Law Group",
+        "story": "Hartwell's office file server kept running out of space. A File Gateway now keeps recent files cached locally while storing everything in S3, so the server never fills up again."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "aws-backup",
+      "name": "AWS Backup",
+      "shortName": "BKP",
+      "category": "storage",
+      "level": "Beginner",
+      "definition": "AWS Backup is a central place to schedule, manage and monitor backups across many AWS services, such as EBS, RDS, DynamoDB, EFS and S3.",
+      "usedFor": [
+        "One backup policy for all your resources",
+        "Meeting compliance rules for retention",
+        "Copying backups to another Region or account for safety"
+      ],
+      "scenario": {
+        "company": "LedgerLite",
+        "story": "Instead of separate scripts for every database and disk, LedgerLite created one AWS Backup plan: daily backups, kept 35 days, with a copy sent to a second Region."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "elastic-disaster-recovery",
+      "name": "AWS Elastic Disaster Recovery",
+      "shortName": "DRS",
+      "category": "storage",
+      "level": "Intermediate",
+      "definition": "Elastic Disaster Recovery continuously copies your servers to AWS so you can quickly recover them there if your data center or primary Region fails.",
+      "usedFor": [
+        "Low-cost disaster recovery for on-premises servers",
+        "Recovering from ransomware with point-in-time copies",
+        "Cross-Region recovery for EC2 workloads"
+      ],
+      "scenario": {
+        "company": "Midland Logistics",
+        "story": "A flood warning hit Midland's warehouse data center. Because their servers were replicated with Elastic Disaster Recovery, they launched them in AWS within an hour and kept shipping orders."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "rds",
+      "name": "Amazon RDS",
+      "shortName": "RDS",
+      "category": "databases",
+      "level": "Beginner",
+      "definition": "Amazon Relational Database Service (RDS) runs traditional SQL databases like MySQL, PostgreSQL, MariaDB, Oracle and SQL Server for you, handling backups, patching and failover.",
+      "usedFor": [
+        "Databases for web and business applications",
+        "Moving an existing SQL database to the cloud",
+        "High availability with Multi-AZ standby copies"
+      ],
+      "scenario": {
+        "company": "Brightside Bakery Co.",
+        "story": "The bakery's order database lived on the same server as its website. Moving it to RDS for MySQL gave them automatic nightly backups and a standby copy in another data center."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "aurora",
+      "name": "Amazon Aurora",
+      "shortName": "AUR",
+      "category": "databases",
+      "level": "Intermediate",
+      "definition": "Aurora is AWS's cloud-built relational database, compatible with MySQL and PostgreSQL, designed for higher performance and availability than a standard database.",
+      "usedFor": [
+        "High-traffic apps that outgrow a single database",
+        "Global apps with read copies in several Regions",
+        "Serverless databases that scale with demand (Aurora Serverless)"
+      ],
+      "scenario": {
+        "company": "TicketDash",
+        "story": "TicketDash's MySQL database struggled on sale days. After moving to Aurora MySQL with several read replicas, seat searches stayed fast even with a million fans online."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "aurora-dsql",
+      "name": "Amazon Aurora DSQL",
+      "shortName": "DSQL",
+      "category": "databases",
+      "level": "Expert",
+      "definition": "Aurora DSQL is a serverless, distributed SQL database that can run active in multiple Regions at once, scaling automatically with virtually no infrastructure to manage.",
+      "usedFor": [
+        "Apps that must keep writing even if a Region goes down",
+        "Globally distributed transactional workloads",
+        "PostgreSQL-compatible apps that need effortless scaling"
+      ],
+      "scenario": {
+        "company": "PayStream",
+        "story": "PayStream processes payments for customers on three continents. With Aurora DSQL running in multiple Regions, payments keep flowing even during a regional outage."
+      },
+      "certifications": [
+        "SAP"
+      ]
+    },
+    {
+      "id": "dynamodb",
+      "name": "Amazon DynamoDB",
+      "shortName": "DDB",
+      "category": "databases",
+      "level": "Beginner",
+      "definition": "DynamoDB is a fully managed NoSQL database that stores data as key-value items and returns results in milliseconds at any scale, with no servers to manage.",
+      "usedFor": [
+        "Shopping carts, user profiles and session data",
+        "Gaming leaderboards and IoT data",
+        "Serverless apps paired with Lambda"
+      ],
+      "scenario": {
+        "company": "PlayForge Games",
+        "story": "PlayForge's mobile game stores each player's inventory in DynamoDB. When the game hit the top of the app store, DynamoDB scaled from hundreds to millions of requests without any changes."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "elasticache",
+      "name": "Amazon ElastiCache",
+      "shortName": "EC$",
+      "category": "databases",
+      "level": "Intermediate",
+      "definition": "ElastiCache is a managed in-memory cache (Valkey, Redis OSS or Memcached) that keeps frequently used data in memory so apps respond much faster.",
+      "usedFor": [
+        "Caching database query results",
+        "Storing user sessions",
+        "Real-time leaderboards and counters"
+      ],
+      "scenario": {
+        "company": "NewsPulse",
+        "story": "NewsPulse's homepage ran the same database queries thousands of times a second. Caching the results in ElastiCache cut page load times in half and reduced database load."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "memorydb",
+      "name": "Amazon MemoryDB",
+      "shortName": "MDB",
+      "category": "databases",
+      "level": "Intermediate",
+      "definition": "MemoryDB is a durable, Redis- and Valkey-compatible in-memory database. It is as fast as a cache but safely stores data across multiple data centers.",
+      "usedFor": [
+        "Ultra-fast primary databases for microservices",
+        "Real-time inventory and session stores",
+        "Apps that need cache speed without risking data loss"
+      ],
+      "scenario": {
+        "company": "FlashCart",
+        "story": "FlashCart runs lightning sales where stock must be accurate to the second. Its inventory counts live in MemoryDB, giving microsecond reads with no risk of losing data on a failure."
+      },
+      "certifications": [
+        "SAA",
+        "DVA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "documentdb",
+      "name": "Amazon DocumentDB",
+      "shortName": "DOC",
+      "category": "databases",
+      "level": "Intermediate",
+      "definition": "DocumentDB is a managed document database compatible with MongoDB, storing flexible JSON-like documents instead of rows and columns.",
+      "usedFor": [
+        "Content catalogs and product listings",
+        "User profiles with varying fields",
+        "Moving MongoDB workloads to a managed service"
+      ],
+      "scenario": {
+        "company": "RecipeBox",
+        "story": "RecipeBox stores recipes with different ingredients, steps and photos. Their MongoDB code worked with DocumentDB with few changes, and they stopped managing database servers."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "keyspaces",
+      "name": "Amazon Keyspaces",
+      "shortName": "KSP",
+      "category": "databases",
+      "level": "Intermediate",
+      "definition": "Keyspaces is a serverless, managed database compatible with Apache Cassandra, built for large-scale apps that need fast reads and writes.",
+      "usedFor": [
+        "Moving Cassandra workloads without managing clusters",
+        "High-volume device and telemetry data",
+        "Apps needing consistent single-digit-millisecond performance"
+      ],
+      "scenario": {
+        "company": "FleetTrack",
+        "story": "FleetTrack logs GPS points from 50,000 delivery vans. They moved their self-managed Cassandra cluster to Keyspaces and no longer get paged at night for node failures."
+      },
+      "certifications": [
+        "SAA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "neptune",
+      "name": "Amazon Neptune",
+      "shortName": "NEP",
+      "category": "databases",
+      "level": "Expert",
+      "definition": "Neptune is a managed graph database that stores relationships between things, such as people, products or accounts, and lets you query those connections quickly.",
+      "usedFor": [
+        "Social networks and friend recommendations",
+        "Fraud detection by finding suspicious connections",
+        "Knowledge graphs for search and generative AI"
+      ],
+      "scenario": {
+        "company": "KinConnect",
+        "story": "KinConnect's 'people you may know' feature needed to explore friends-of-friends instantly. Storing the social graph in Neptune turned a slow multi-join SQL query into a fast graph lookup."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SAP",
+        "AIP"
+      ]
+    },
+    {
+      "id": "timestream",
+      "name": "Amazon Timestream",
+      "shortName": "TS",
+      "category": "databases",
+      "level": "Intermediate",
+      "definition": "Timestream is a managed time-series database for data that arrives over time, like sensor readings or app metrics, with built-in time-based queries.",
+      "usedFor": [
+        "IoT sensor data and industrial telemetry",
+        "Application and infrastructure metrics",
+        "Real-time dashboards over recent data"
+      ],
+      "scenario": {
+        "company": "GreenLeaf Farms",
+        "story": "GreenLeaf's greenhouses send temperature and humidity readings every 10 seconds. Timestream stores the readings and powers a dashboard showing trends over the past hour, day and season."
+      },
+      "certifications": [
+        "SAA",
+        "DEA"
+      ]
+    },
+    {
+      "id": "vpc",
+      "name": "Amazon VPC",
+      "shortName": "VPC",
+      "category": "networking",
+      "level": "Beginner",
+      "definition": "Amazon Virtual Private Cloud (VPC) is your own private, isolated network inside AWS, where you control IP addresses, subnets, routing and firewalls.",
+      "usedFor": [
+        "Separating public web servers from private databases",
+        "Controlling traffic with security groups and network ACLs",
+        "Connecting cloud resources securely to your office"
+      ],
+      "scenario": {
+        "company": "LedgerLite",
+        "story": "LedgerLite put its web servers in public subnets and its database in private subnets of a VPC. The database can't be reached from the internet at all, only from the web tier."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "route-53",
+      "name": "Amazon Route 53",
+      "shortName": "R53",
+      "category": "networking",
+      "level": "Beginner",
+      "definition": "Route 53 is AWS's DNS service: it turns names like example.com into the addresses of your servers, and can route users to healthy or nearby endpoints.",
+      "usedFor": [
+        "Registering domain names and managing DNS",
+        "Failing over to a backup site automatically",
+        "Routing users to the closest or fastest Region"
+      ],
+      "scenario": {
+        "company": "TutorLink",
+        "story": "TutorLink registered its domain with Route 53. Health checks watch the main site, and if it ever goes down, Route 53 automatically sends visitors to a static 'we'll be right back' page in S3."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "ANS"
+      ]
+    },
+    {
+      "id": "cloudfront",
+      "name": "Amazon CloudFront",
+      "shortName": "CF",
+      "category": "networking",
+      "level": "Beginner",
+      "definition": "CloudFront is a content delivery network (CDN) that caches your website, videos and APIs in hundreds of locations worldwide so users get them faster.",
+      "usedFor": [
+        "Speeding up websites and downloads globally",
+        "Streaming video",
+        "Protecting origins together with AWS WAF and Shield"
+      ],
+      "scenario": {
+        "company": "StreamWave Media",
+        "story": "StreamWave's viewers in Asia complained about buffering. Serving video through CloudFront meant clips were delivered from nearby edge locations, and buffering complaints dropped sharply."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "elastic-load-balancing",
+      "name": "Elastic Load Balancing",
+      "shortName": "ELB",
+      "category": "networking",
+      "level": "Beginner",
+      "definition": "Elastic Load Balancing spreads incoming traffic across multiple servers or containers and stops sending traffic to any that are unhealthy. Types include Application, Network and Gateway Load Balancers.",
+      "usedFor": [
+        "Keeping websites up when one server fails",
+        "Routing requests by URL path to different services",
+        "Handling millions of connections with low latency"
+      ],
+      "scenario": {
+        "company": "ShopNest",
+        "story": "ShopNest's Application Load Balancer sends /cart requests to the cart service and /search requests to the search service, and quietly skips any container that fails a health check."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "api-gateway",
+      "name": "Amazon API Gateway",
+      "shortName": "APIG",
+      "category": "networking",
+      "level": "Intermediate",
+      "definition": "API Gateway lets you create, publish and secure APIs, the 'front door' apps use to talk to your back end, without running any servers.",
+      "usedFor": [
+        "REST, HTTP and WebSocket APIs for web and mobile apps",
+        "Adding authentication, throttling and caching to APIs",
+        "Exposing Lambda functions as web endpoints"
+      ],
+      "scenario": {
+        "company": "FitTrack",
+        "story": "FitTrack's mobile app calls an API Gateway endpoint to save workouts. API Gateway checks the user's login token, limits abusive clients and passes valid requests to Lambda."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "AIP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "direct-connect",
+      "name": "AWS Direct Connect",
+      "shortName": "DX",
+      "category": "networking",
+      "level": "Expert",
+      "definition": "Direct Connect is a private, dedicated network connection from your data center or office to AWS that doesn't travel over the public internet.",
+      "usedFor": [
+        "Consistent, high-bandwidth hybrid connections",
+        "Transferring large data sets regularly",
+        "Meeting rules that forbid internet-based connections"
+      ],
+      "scenario": {
+        "company": "NorthBank Financial",
+        "story": "NorthBank moves terabytes of trading data to AWS every night. A Direct Connect link gives them steady, predictable throughput that their internet connection couldn't guarantee."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "ANS"
+      ]
+    },
+    {
+      "id": "site-to-site-vpn",
+      "name": "AWS Site-to-Site VPN",
+      "shortName": "VPN",
+      "category": "networking",
+      "level": "Intermediate",
+      "definition": "Site-to-Site VPN creates an encrypted tunnel over the internet between your office or data center network and your AWS VPC.",
+      "usedFor": [
+        "Quick, low-cost hybrid connectivity",
+        "Backup path for a Direct Connect link",
+        "Connecting branch offices to AWS"
+      ],
+      "scenario": {
+        "company": "Hartwell Law Group",
+        "story": "Hartwell needed its office to reach a document system in AWS securely. A Site-to-Site VPN was set up in a day using the office's existing firewall."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "client-vpn",
+      "name": "AWS Client VPN",
+      "shortName": "CVPN",
+      "category": "networking",
+      "level": "Intermediate",
+      "definition": "Client VPN lets individual employees securely connect from their laptops to AWS and on-premises networks using a VPN app.",
+      "usedFor": [
+        "Secure remote work access",
+        "Reaching private resources in a VPC",
+        "Replacing self-managed VPN servers"
+      ],
+      "scenario": {
+        "company": "Granite & Co. Architects",
+        "story": "When the firm went hybrid-remote, designers used Client VPN to reach the private file servers in AWS from home, with logins tied to the company directory."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "transit-gateway",
+      "name": "AWS Transit Gateway",
+      "shortName": "TGW",
+      "category": "networking",
+      "level": "Expert",
+      "definition": "Transit Gateway is a central network hub that connects many VPCs and on-premises networks, so you don't need a tangled web of individual connections.",
+      "usedFor": [
+        "Connecting dozens or hundreds of VPCs",
+        "Sharing one VPN or Direct Connect link across VPCs",
+        "Centrally inspecting and routing traffic"
+      ],
+      "scenario": {
+        "company": "Continental Rail",
+        "story": "Continental Rail had 40 VPCs connected by a confusing mesh of peering links. They replaced the mesh with a single Transit Gateway that every VPC and the data center connect to."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "SAP",
+        "ANS"
+      ]
+    },
+    {
+      "id": "global-accelerator",
+      "name": "AWS Global Accelerator",
+      "shortName": "GA",
+      "category": "networking",
+      "level": "Intermediate",
+      "definition": "Global Accelerator gives your app fixed global IP addresses and routes users over AWS's private global network to the nearest healthy endpoint.",
+      "usedFor": [
+        "Improving performance for global users of TCP/UDP apps",
+        "Fast Regional failover",
+        "Static IPs that customers can allowlist"
+      ],
+      "scenario": {
+        "company": "ArenaVerse",
+        "story": "ArenaVerse's game servers run in four Regions. Global Accelerator gives players a single pair of IPs and sends them to the closest healthy Region, cutting lag for players worldwide."
+      },
+      "certifications": [
+        "SAA",
+        "SAP",
+        "ANS"
+      ]
+    },
+    {
+      "id": "privatelink",
+      "name": "AWS PrivateLink",
+      "shortName": "PL",
+      "category": "networking",
+      "level": "Expert",
+      "definition": "PrivateLink lets you reach AWS services, or services from other companies, privately from your VPC without sending traffic over the public internet.",
+      "usedFor": [
+        "Private access to AWS services via VPC endpoints",
+        "Offering your SaaS product privately to customers",
+        "Keeping sensitive traffic off the internet"
+      ],
+      "scenario": {
+        "company": "PayStream",
+        "story": "PayStream's customers didn't want payment data crossing the internet. PayStream published its API with PrivateLink, so each customer connects privately from their own VPC."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "cloud-map",
+      "name": "AWS Cloud Map",
+      "shortName": "MAP",
+      "category": "networking",
+      "level": "Intermediate",
+      "definition": "Cloud Map is a service registry: your apps register their location, and other apps can look them up by a friendly name instead of hard-coding addresses.",
+      "usedFor": [
+        "Service discovery for microservices",
+        "Keeping track of constantly changing container IPs",
+        "Health-aware lookups of healthy endpoints"
+      ],
+      "scenario": {
+        "company": "ShopNest",
+        "story": "ShopNest's containers come and go many times a day. Each registers itself in Cloud Map, and the cart service always finds the payment service by name."
+      },
+      "certifications": [
+        "DVA",
+        "ANS"
+      ]
+    },
+    {
+      "id": "vpc-lattice",
+      "name": "Amazon VPC Lattice",
+      "shortName": "LAT",
+      "category": "networking",
+      "level": "Expert",
+      "definition": "VPC Lattice connects, secures and monitors communication between services across many VPCs and accounts, without managing complex network plumbing.",
+      "usedFor": [
+        "Service-to-service networking across accounts",
+        "Applying access policies between microservices",
+        "Simplifying connectivity when IP ranges overlap"
+      ],
+      "scenario": {
+        "company": "MegaMart",
+        "story": "MegaMart's 30 teams each own their own AWS accounts. VPC Lattice lets the checkout service call inventory and pricing services across accounts with simple access policies."
+      },
+      "certifications": [
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "cloud-wan",
+      "name": "AWS Cloud WAN",
+      "shortName": "WAN",
+      "category": "networking",
+      "level": "Expert",
+      "definition": "Cloud WAN lets you build and manage a global network that links your offices, data centers and AWS Regions from one central dashboard and policy.",
+      "usedFor": [
+        "Global corporate networks across many countries",
+        "Segmenting traffic like production vs. development worldwide",
+        "Replacing complex manual WAN setups"
+      ],
+      "scenario": {
+        "company": "Atlas Shipping",
+        "story": "Atlas Shipping has offices in 25 ports worldwide. Cloud WAN connects every office and AWS Region using one policy, keeping finance traffic separate from guest Wi-Fi traffic."
+      },
+      "certifications": [
+        "SAP",
+        "ANS"
+      ]
+    },
+    {
+      "id": "iam",
+      "name": "AWS IAM",
+      "shortName": "IAM",
+      "category": "security",
+      "level": "Beginner",
+      "definition": "AWS Identity and Access Management (IAM) controls who can sign in to your AWS account and exactly what they are allowed to do, using users, roles and permission policies.",
+      "usedFor": [
+        "Giving each person or app only the permissions it needs",
+        "Letting AWS services act on your behalf with roles",
+        "Requiring multi-factor authentication (MFA)"
+      ],
+      "scenario": {
+        "company": "TutorLink",
+        "story": "TutorLink's intern needed to view logs but not delete servers. An IAM policy gave read-only access to CloudWatch, and the app servers use an IAM role instead of stored passwords."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "MLA",
+        "SAP",
+        "DOP",
+        "AIP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "iam-identity-center",
+      "name": "AWS IAM Identity Center",
+      "shortName": "IDC",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "IAM Identity Center gives employees one login to access all your AWS accounts and business apps, often connected to an existing directory like Microsoft Entra ID or Okta.",
+      "usedFor": [
+        "Single sign-on across many AWS accounts",
+        "Managing workforce access centrally",
+        "Assigning permission sets by job role"
+      ],
+      "scenario": {
+        "company": "MegaMart",
+        "story": "MegaMart's engineers used to juggle logins for 60 AWS accounts. With IAM Identity Center they sign in once with their company account and pick the account and role they need."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "cognito",
+      "name": "Amazon Cognito",
+      "shortName": "COG",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "Cognito adds sign-up, sign-in and user management to your web and mobile apps, including social logins like Google or Apple.",
+      "usedFor": [
+        "Customer login for apps",
+        "Social and enterprise identity federation",
+        "Giving app users temporary AWS credentials"
+      ],
+      "scenario": {
+        "company": "FitTrack",
+        "story": "FitTrack needed user accounts with 'Sign in with Apple' and password resets. Cognito handled all of it, so the team didn't have to build or secure its own login system."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SAP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "kms",
+      "name": "AWS KMS",
+      "shortName": "KMS",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "AWS Key Management Service (KMS) creates and controls the encryption keys used to protect your data, and records every time a key is used.",
+      "usedFor": [
+        "Encrypting S3, EBS, RDS and other data at rest",
+        "Controlling who can decrypt sensitive data",
+        "Meeting compliance requirements for key management"
+      ],
+      "scenario": {
+        "company": "Riverside Hospital",
+        "story": "Every patient record Riverside stores is encrypted with a KMS key. Only the clinical app's role may use the key, and CloudTrail logs each decryption for auditors."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "MLA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "secrets-manager",
+      "name": "AWS Secrets Manager",
+      "shortName": "SM",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "Secrets Manager securely stores passwords, API keys and other secrets, and can rotate them automatically so they never sit unchanged in your code.",
+      "usedFor": [
+        "Storing database passwords outside of code",
+        "Automatic credential rotation",
+        "Sharing secrets safely between apps"
+      ],
+      "scenario": {
+        "company": "LedgerLite",
+        "story": "A developer accidentally committed a database password to Git. After that, LedgerLite moved all credentials to Secrets Manager, which now rotates the password every 30 days."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "acm",
+      "name": "AWS Certificate Manager",
+      "shortName": "ACM",
+      "category": "security",
+      "level": "Beginner",
+      "definition": "Certificate Manager provides free public SSL/TLS certificates for your AWS-hosted websites and renews them automatically, enabling the padlock (HTTPS) in browsers.",
+      "usedFor": [
+        "HTTPS for load balancers, CloudFront and API Gateway",
+        "Automatic certificate renewal",
+        "Managing private certificates for internal apps"
+      ],
+      "scenario": {
+        "company": "Brightside Bakery Co.",
+        "story": "Their site once went down because a certificate expired. Now ACM issues the certificate for their load balancer and renews it automatically, so it never expires again."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "cloudhsm",
+      "name": "AWS CloudHSM",
+      "shortName": "HSM",
+      "category": "security",
+      "level": "Expert",
+      "definition": "CloudHSM gives you dedicated, single-tenant hardware security modules in AWS, where you alone control the encryption keys.",
+      "usedFor": [
+        "Strict compliance needing dedicated key hardware",
+        "Payment and banking cryptography",
+        "Custom key stores for KMS"
+      ],
+      "scenario": {
+        "company": "PayStream",
+        "story": "Card network rules required PayStream to keep keys in dedicated hardware it controls. CloudHSM met the requirement without PayStream buying and racking its own HSM appliances."
+      },
+      "certifications": [
+        "SAA",
+        "SAP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "waf",
+      "name": "AWS WAF",
+      "shortName": "WAF",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "AWS WAF is a web application firewall that blocks malicious web requests, such as SQL injection, bots and attacks from specific countries or IPs.",
+      "usedFor": [
+        "Protecting websites and APIs from common exploits",
+        "Rate-limiting abusive bots and scrapers",
+        "Blocking traffic by location or IP"
+      ],
+      "scenario": {
+        "company": "FlashCart",
+        "story": "Bots were buying up limited sneakers within seconds. FlashCart added AWS WAF bot-control and rate-limiting rules to its CloudFront distribution, giving real shoppers a fair chance."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "shield",
+      "name": "AWS Shield",
+      "shortName": "SHD",
+      "category": "security",
+      "level": "Beginner",
+      "definition": "Shield protects your applications against DDoS attacks, which try to overwhelm a site with traffic. Shield Standard is automatic and free; Shield Advanced adds more protection and expert help.",
+      "usedFor": [
+        "Automatic protection from common network attacks",
+        "Advanced DDoS protection with 24/7 response team",
+        "Cost protection from attack-driven scaling"
+      ],
+      "scenario": {
+        "company": "NewsPulse",
+        "story": "During a major election night, NewsPulse was hit by a large DDoS attack. Shield Advanced absorbed the flood and the AWS response team helped tune defenses while the site stayed online."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "guardduty",
+      "name": "Amazon GuardDuty",
+      "shortName": "GD",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "GuardDuty is a threat-detection service that continuously watches your AWS logs and activity for signs of hackers, malware or compromised credentials.",
+      "usedFor": [
+        "Detecting unusual API calls or logins",
+        "Spotting crypto-mining on compromised instances",
+        "Finding malware in EC2 volumes and S3"
+      ],
+      "scenario": {
+        "company": "PlayForge Games",
+        "story": "GuardDuty alerted PlayForge that a server was talking to a known crypto-mining address. The leaked key was revoked and the instance replaced within the hour."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "inspector",
+      "name": "Amazon Inspector",
+      "shortName": "INS",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "Inspector automatically scans EC2 instances, container images and Lambda functions for software vulnerabilities and unintended network exposure.",
+      "usedFor": [
+        "Continuous vulnerability scanning",
+        "Prioritizing which patches matter most",
+        "Scanning container images in ECR"
+      ],
+      "scenario": {
+        "company": "QuickQuote Insurance",
+        "story": "When a critical bug was announced in a popular library, Inspector showed QuickQuote within minutes exactly which of its 300 containers and functions were affected."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "macie",
+      "name": "Amazon Macie",
+      "shortName": "MAC",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "Macie uses machine learning to find sensitive data, such as names, credit card numbers or passport numbers, stored in your S3 buckets and alerts you to risks.",
+      "usedFor": [
+        "Discovering personal data in S3",
+        "Supporting GDPR, HIPAA and PCI compliance",
+        "Finding publicly accessible buckets with sensitive data"
+      ],
+      "scenario": {
+        "company": "TutorLink",
+        "story": "A Macie scan found a forgotten S3 bucket containing student contact lists. TutorLink locked it down and set up regular scans to catch similar mistakes early."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DEA",
+        "SAP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "security-hub",
+      "name": "AWS Security Hub",
+      "shortName": "SH",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "Security Hub collects security findings from many AWS services and partner tools into one dashboard and checks your accounts against best-practice standards.",
+      "usedFor": [
+        "A single view of security alerts across accounts",
+        "Automated best-practice and compliance checks",
+        "Triggering automatic fixes for common issues"
+      ],
+      "scenario": {
+        "company": "MegaMart",
+        "story": "MegaMart's security team used to check five different consoles. Security Hub now gathers GuardDuty, Inspector and Macie findings from every account into one prioritized list."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "detective",
+      "name": "Amazon Detective",
+      "shortName": "DET",
+      "category": "security",
+      "level": "Expert",
+      "definition": "Detective helps you investigate security incidents by automatically linking logs and activity into visual timelines, so you can find the root cause faster.",
+      "usedFor": [
+        "Investigating GuardDuty findings",
+        "Understanding what a compromised user or role did",
+        "Speeding up incident response"
+      ],
+      "scenario": {
+        "company": "PlayForge Games",
+        "story": "After the crypto-mining alert, PlayForge used Detective to trace which IAM key was used, from which IP, and every other resource it touched in the previous week."
+      },
+      "certifications": [
+        "SAA",
+        "SCS"
+      ]
+    },
+    {
+      "id": "firewall-manager",
+      "name": "AWS Firewall Manager",
+      "shortName": "FM",
+      "category": "security",
+      "level": "Expert",
+      "definition": "Firewall Manager centrally sets up and enforces firewall rules, like WAF rules, security groups and Network Firewall policies, across all accounts in your organization.",
+      "usedFor": [
+        "Consistent WAF protection on every account",
+        "Auto-applying rules to new resources",
+        "Auditing security groups organization-wide"
+      ],
+      "scenario": {
+        "company": "MegaMart",
+        "story": "New teams kept launching websites without WAF. Firewall Manager now automatically attaches MegaMart's standard WAF rules to every new load balancer in every account."
+      },
+      "certifications": [
+        "SAA",
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "network-firewall",
+      "name": "AWS Network Firewall",
+      "shortName": "NFW",
+      "category": "security",
+      "level": "Expert",
+      "definition": "Network Firewall is a managed firewall for your VPCs that inspects and filters network traffic, including blocking traffic to bad domains.",
+      "usedFor": [
+        "Filtering outbound internet traffic by domain",
+        "Intrusion prevention for VPC traffic",
+        "Centralized inspection with Transit Gateway"
+      ],
+      "scenario": {
+        "company": "NorthBank Financial",
+        "story": "Regulators asked NorthBank to restrict which websites servers can reach. Network Firewall now allows outbound traffic only to an approved list of software-update domains."
+      },
+      "certifications": [
+        "SAA",
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "artifact",
+      "name": "AWS Artifact",
+      "shortName": "ART",
+      "category": "security",
+      "level": "Beginner",
+      "definition": "Artifact is a self-service portal where you download AWS's compliance reports, such as SOC and ISO certifications, and accept agreements like a HIPAA BAA.",
+      "usedFor": [
+        "Giving auditors AWS compliance reports",
+        "Accepting legal agreements with AWS",
+        "Supporting vendor risk reviews"
+      ],
+      "scenario": {
+        "company": "Riverside Hospital",
+        "story": "Before going live, Riverside's compliance officer downloaded AWS's SOC 2 report from Artifact and accepted the HIPAA Business Associate Addendum in a few clicks."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SCS"
+      ]
+    },
+    {
+      "id": "audit-manager",
+      "name": "AWS Audit Manager",
+      "shortName": "AM",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "Audit Manager continuously collects evidence about how your AWS resources are configured and maps it to audit frameworks, making audits far less painful.",
+      "usedFor": [
+        "Preparing for SOC 2, PCI DSS or GDPR audits",
+        "Automatic evidence collection",
+        "Tracking control status over time"
+      ],
+      "scenario": {
+        "company": "PayStream",
+        "story": "PayStream's PCI audit used to take weeks of screenshots. Audit Manager now gathers the evidence automatically, and auditors review a ready-made report."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SCS"
+      ]
+    },
+    {
+      "id": "directory-service",
+      "name": "AWS Directory Service",
+      "shortName": "AD",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "Directory Service runs Microsoft Active Directory in AWS for you, or connects AWS to your existing on-premises Active Directory.",
+      "usedFor": [
+        "Joining Windows servers in AWS to a domain",
+        "Single sign-on for Windows-based apps",
+        "Using company AD logins with AWS services"
+      ],
+      "scenario": {
+        "company": "Granite & Co. Architects",
+        "story": "The firm's Windows apps relied on Active Directory. AWS Managed Microsoft AD let their cloud servers and WorkSpaces use the same staff logins as the office."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "SAP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "ram",
+      "name": "AWS Resource Access Manager",
+      "shortName": "RAM",
+      "category": "security",
+      "level": "Intermediate",
+      "definition": "Resource Access Manager lets you securely share AWS resources, such as subnets or Transit Gateways, with other AWS accounts instead of duplicating them.",
+      "usedFor": [
+        "Sharing a central network with many accounts",
+        "Avoiding duplicate resources and costs",
+        "Sharing within an AWS Organization"
+      ],
+      "scenario": {
+        "company": "Continental Rail",
+        "story": "Continental Rail's network team owns the Transit Gateway. Using RAM, they share it with every application account so teams can connect without building their own."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "verified-access",
+      "name": "AWS Verified Access",
+      "shortName": "VA",
+      "category": "security",
+      "level": "Expert",
+      "definition": "Verified Access gives employees secure access to internal apps without a VPN, checking each request's user identity and device security first (a 'zero trust' approach).",
+      "usedFor": [
+        "VPN-less access to corporate apps",
+        "Zero-trust security policies",
+        "Per-app access rules based on user and device"
+      ],
+      "scenario": {
+        "company": "QuickQuote Insurance",
+        "story": "QuickQuote replaced its VPN for claims adjusters. Now Verified Access checks that each adjuster is logged in and their laptop is managed before opening the claims app."
+      },
+      "certifications": [
+        "SAP",
+        "ANS",
+        "SCS"
+      ]
+    },
+    {
+      "id": "security-lake",
+      "name": "Amazon Security Lake",
+      "shortName": "SL",
+      "category": "security",
+      "level": "Expert",
+      "definition": "Security Lake automatically gathers security logs from AWS, on-premises and third-party sources into a data lake in your account, in a standard format.",
+      "usedFor": [
+        "Centralizing security logs for analysis",
+        "Long-term threat hunting",
+        "Feeding security tools with consistent data"
+      ],
+      "scenario": {
+        "company": "Atlas Shipping",
+        "story": "Atlas Shipping's analysts needed a year of logs to investigate threats. Security Lake collects CloudTrail, VPC and firewall logs into one queryable lake in a common format."
+      },
+      "certifications": [
+        "SCS"
+      ]
+    },
+    {
+      "id": "verified-permissions",
+      "name": "Amazon Verified Permissions",
+      "shortName": "AVP",
+      "category": "security",
+      "level": "Expert",
+      "definition": "Verified Permissions manages fine-grained permissions inside your own applications, using readable policies written in the Cedar language.",
+      "usedFor": [
+        "Deciding what each app user can see or do",
+        "Moving authorization rules out of application code",
+        "Consistent access rules across many apps"
+      ],
+      "scenario": {
+        "company": "Hartwell Law Group",
+        "story": "Hartwell's case app must ensure lawyers see only their own clients' files. Verified Permissions evaluates a Cedar policy on every request instead of scattered if-statements in code."
+      },
+      "certifications": [
+        "DVA",
+        "SCS"
+      ]
+    },
+    {
+      "id": "private-ca",
+      "name": "AWS Private Certificate Authority",
+      "shortName": "PCA",
+      "category": "security",
+      "level": "Expert",
+      "definition": "AWS Private CA lets you create your own private certificate authority to issue certificates for internal servers, devices and services.",
+      "usedFor": [
+        "Certificates for internal apps and microservices",
+        "Identity for IoT devices",
+        "Mutual TLS between services"
+      ],
+      "scenario": {
+        "company": "GreenLeaf Farms",
+        "story": "Every greenhouse sensor needs its own certificate to prove its identity. GreenLeaf issues them from a Private CA, and revokes any sensor that is stolen."
+      },
+      "certifications": [
+        "SAP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "cloudwatch",
+      "name": "Amazon CloudWatch",
+      "shortName": "CW",
+      "category": "management",
+      "level": "Beginner",
+      "definition": "CloudWatch collects metrics and logs from your AWS resources and apps, shows them on dashboards and sends alarms when something looks wrong.",
+      "usedFor": [
+        "Monitoring CPU, memory, errors and latency",
+        "Centralizing application logs",
+        "Alarms that notify people or trigger auto-scaling"
+      ],
+      "scenario": {
+        "company": "TicketDash",
+        "story": "A CloudWatch alarm fires if checkout errors rise above 1%. The on-call engineer gets paged and uses CloudWatch Logs to find the bad deployment in minutes."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "MLA",
+        "SAP",
+        "DOP",
+        "AIP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "cloudtrail",
+      "name": "AWS CloudTrail",
+      "shortName": "CT",
+      "category": "management",
+      "level": "Beginner",
+      "definition": "CloudTrail records every action taken in your AWS account, such as who did what, when and from where, creating an audit trail.",
+      "usedFor": [
+        "Security investigations",
+        "Compliance auditing",
+        "Troubleshooting 'who changed this?' questions"
+      ],
+      "scenario": {
+        "company": "Pagewise Publishing",
+        "story": "A production database was mysteriously deleted. CloudTrail showed exactly which user made the call and when, which led to tighter IAM permissions."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "config",
+      "name": "AWS Config",
+      "shortName": "CFG",
+      "category": "management",
+      "level": "Intermediate",
+      "definition": "AWS Config keeps a history of how your resources are configured and checks them against rules, flagging anything non-compliant such as an unencrypted disk.",
+      "usedFor": [
+        "Tracking configuration changes over time",
+        "Enforcing rules like 'all S3 buckets must be private'",
+        "Auto-remediating non-compliant resources"
+      ],
+      "scenario": {
+        "company": "Riverside Hospital",
+        "story": "A Config rule checks that every EBS volume is encrypted. When someone launches an unencrypted one, Config flags it and the security team is notified automatically."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "systems-manager",
+      "name": "AWS Systems Manager",
+      "shortName": "SSM",
+      "category": "management",
+      "level": "Intermediate",
+      "definition": "Systems Manager is a toolbox for operating your servers at scale: patching, running commands, storing settings and logging in securely without opening SSH ports.",
+      "usedFor": [
+        "Automated OS patching across fleets",
+        "Secure shell access with Session Manager",
+        "Storing configuration in Parameter Store"
+      ],
+      "scenario": {
+        "company": "Midland Logistics",
+        "story": "Midland patches 800 servers every month using Systems Manager Patch Manager, and engineers use Session Manager to log in, so no SSH ports are open to the internet."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "cloudformation",
+      "name": "AWS CloudFormation",
+      "shortName": "CFN",
+      "category": "management",
+      "level": "Intermediate",
+      "definition": "CloudFormation lets you describe your AWS infrastructure in a template file (YAML or JSON) and creates it automatically, an approach called infrastructure as code.",
+      "usedFor": [
+        "Building identical dev, test and production environments",
+        "Version-controlling infrastructure",
+        "Deploying across many accounts and Regions with StackSets"
+      ],
+      "scenario": {
+        "company": "QuickQuote Insurance",
+        "story": "QuickQuote's whole environment, including VPC, load balancer, containers and database, lives in CloudFormation templates. Spinning up a new test environment takes 20 minutes and zero clicks."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "organizations",
+      "name": "AWS Organizations",
+      "shortName": "ORG",
+      "category": "management",
+      "level": "Intermediate",
+      "definition": "Organizations lets you manage many AWS accounts together, with consolidated billing and guardrail policies (SCPs) that apply to every account.",
+      "usedFor": [
+        "Separating teams and environments into accounts",
+        "One combined bill with volume discounts",
+        "Blocking risky actions across all accounts"
+      ],
+      "scenario": {
+        "company": "MegaMart",
+        "story": "MegaMart groups its accounts by business unit in Organizations. A service control policy prevents anyone from turning off CloudTrail, in any account."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "control-tower",
+      "name": "AWS Control Tower",
+      "shortName": "CTW",
+      "category": "management",
+      "level": "Intermediate",
+      "definition": "Control Tower sets up a secure, well-organized multi-account AWS environment (a 'landing zone') in a few steps, with built-in guardrails and an account factory.",
+      "usedFor": [
+        "Quickly setting up multi-account best practices",
+        "Vending new accounts with standard settings",
+        "Monitoring guardrail compliance"
+      ],
+      "scenario": {
+        "company": "FitTrack",
+        "story": "As FitTrack grew to 10 teams, it used Control Tower to create a landing zone. New team accounts now come pre-configured with logging, security and budget alerts."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "trusted-advisor",
+      "name": "AWS Trusted Advisor",
+      "shortName": "TA",
+      "category": "management",
+      "level": "Beginner",
+      "definition": "Trusted Advisor inspects your AWS account and gives recommendations to save money, improve security, increase performance and avoid hitting service limits.",
+      "usedFor": [
+        "Finding idle or underused resources",
+        "Spotting security gaps like open ports",
+        "Warning before you reach service quotas"
+      ],
+      "scenario": {
+        "company": "Brightside Bakery Co.",
+        "story": "Trusted Advisor pointed out two forgotten test servers and an unused load balancer. Removing them cut the bakery's monthly AWS bill noticeably."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "service-catalog",
+      "name": "AWS Service Catalog",
+      "shortName": "SC",
+      "category": "management",
+      "level": "Intermediate",
+      "definition": "Service Catalog lets IT teams publish a menu of approved, pre-configured AWS products that employees can launch themselves with a few clicks.",
+      "usedFor": [
+        "Self-service for approved infrastructure",
+        "Enforcing company standards and tags",
+        "Governing what teams can deploy"
+      ],
+      "scenario": {
+        "company": "NorthBank Financial",
+        "story": "Data scientists at NorthBank can launch an approved, pre-secured analytics workspace from Service Catalog without waiting days for an IT ticket."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "health-dashboard",
+      "name": "AWS Health Dashboard",
+      "shortName": "HD",
+      "category": "management",
+      "level": "Beginner",
+      "definition": "The AWS Health Dashboard shows the status of AWS services and alerts you to events, such as outages or scheduled maintenance, that affect your specific resources.",
+      "usedFor": [
+        "Checking if an AWS issue is affecting you",
+        "Getting notified of scheduled maintenance",
+        "Automating responses to health events"
+      ],
+      "scenario": {
+        "company": "TutorLink",
+        "story": "When an EC2 host needed retirement, the Health Dashboard warned TutorLink a week in advance, so they moved the instance during a quiet hour instead of being surprised."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "DOP"
+      ]
+    },
+    {
+      "id": "compute-optimizer",
+      "name": "AWS Compute Optimizer",
+      "shortName": "CO",
+      "category": "management",
+      "level": "Intermediate",
+      "definition": "Compute Optimizer analyzes how your resources are actually used and recommends better-sized EC2 instances, EBS volumes, Lambda functions and containers.",
+      "usedFor": [
+        "Right-sizing oversized servers",
+        "Finding cheaper or faster instance types",
+        "Optimizing Lambda memory settings"
+      ],
+      "scenario": {
+        "company": "LedgerLite",
+        "story": "Compute Optimizer showed that LedgerLite's servers averaged 8% CPU. Switching to smaller instances saved money with no performance impact."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "license-manager",
+      "name": "AWS License Manager",
+      "shortName": "LM",
+      "category": "management",
+      "level": "Intermediate",
+      "definition": "License Manager helps you track and enforce software licenses, like Microsoft or Oracle, across AWS and on-premises to avoid overuse and penalties.",
+      "usedFor": [
+        "Tracking license usage",
+        "Preventing launches that exceed license limits",
+        "Preparing for vendor audits"
+      ],
+      "scenario": {
+        "company": "Continental Rail",
+        "story": "Continental Rail owns 200 SQL Server licenses. License Manager blocks new launches beyond that number, avoiding expensive surprises during a vendor audit."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "well-architected-tool",
+      "name": "AWS Well-Architected Tool",
+      "shortName": "WA",
+      "category": "management",
+      "level": "Beginner",
+      "definition": "The Well-Architected Tool walks you through questions about your workload and compares it to AWS best practices across six pillars, highlighting risks to fix.",
+      "usedFor": [
+        "Reviewing architecture before launch",
+        "Finding reliability, security and cost risks",
+        "Tracking improvements over time"
+      ],
+      "scenario": {
+        "company": "FitTrack",
+        "story": "Before a big marketing campaign, FitTrack ran a Well-Architected review. It revealed their database had no backups in another Region, which they fixed before launch."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "managed-grafana",
+      "name": "Amazon Managed Grafana",
+      "shortName": "GRF",
+      "category": "management",
+      "level": "Intermediate",
+      "definition": "Managed Grafana runs the popular open-source Grafana dashboards for you, letting teams visualize metrics, logs and traces from many data sources.",
+      "usedFor": [
+        "Operational dashboards across tools",
+        "Visualizing Prometheus and CloudWatch metrics",
+        "Sharing dashboards with single sign-on"
+      ],
+      "scenario": {
+        "company": "StreamWave Media",
+        "story": "StreamWave's engineers loved Grafana but hated maintaining it. Managed Grafana gave them the same dashboards, connected to CloudWatch and Prometheus, with no servers to patch."
+      },
+      "certifications": [
+        "SOA",
+        "DOP"
+      ]
+    },
+    {
+      "id": "managed-prometheus",
+      "name": "Amazon Managed Service for Prometheus",
+      "shortName": "PRM",
+      "category": "management",
+      "level": "Intermediate",
+      "definition": "This service stores and queries metrics using Prometheus, the open-source monitoring standard for containers, without you running Prometheus servers.",
+      "usedFor": [
+        "Monitoring Kubernetes and container workloads",
+        "Long-term storage of Prometheus metrics",
+        "Scaling monitoring without managing servers"
+      ],
+      "scenario": {
+        "company": "StreamWave Media",
+        "story": "StreamWave's EKS clusters send metrics to Managed Prometheus, which scales automatically as they add clusters, and feeds their Grafana dashboards."
+      },
+      "certifications": [
+        "SOA",
+        "DOP"
+      ]
+    },
+    {
+      "id": "resilience-hub",
+      "name": "AWS Resilience Hub",
+      "shortName": "RH",
+      "category": "management",
+      "level": "Expert",
+      "definition": "Resilience Hub assesses whether your application can meet its recovery goals (how fast and with how little data loss) and recommends improvements.",
+      "usedFor": [
+        "Checking recovery time and recovery point targets",
+        "Finding single points of failure",
+        "Tracking resilience as apps change"
+      ],
+      "scenario": {
+        "company": "PayStream",
+        "story": "PayStream set a goal of recovering within 15 minutes. Resilience Hub found a single-AZ cache that broke that goal, and recommended a multi-AZ setup."
+      },
+      "certifications": [
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "management-console",
+      "name": "AWS Management Console",
+      "shortName": "CON",
+      "category": "management",
+      "level": "Beginner",
+      "definition": "The Management Console is the web interface where you sign in and manage all your AWS services through point-and-click screens.",
+      "usedFor": [
+        "Exploring and learning AWS services",
+        "Creating and managing resources visually",
+        "Viewing billing, health and dashboards"
+      ],
+      "scenario": {
+        "company": "Maple Street Dental",
+        "story": "The dental office's IT helper does everything in the Management Console, from checking the website server to reviewing the monthly bill, without writing any code."
+      },
+      "certifications": [
+        "CLF",
+        "SOA"
+      ]
+    },
+    {
+      "id": "aws-support",
+      "name": "AWS Support Plans",
+      "shortName": "SUP",
+      "category": "management",
+      "level": "Beginner",
+      "definition": "AWS Support offers plans from free Basic support to Business, Enterprise On-Ramp and Enterprise, adding faster response times, technical experts and account guidance.",
+      "usedFor": [
+        "Getting help from AWS engineers",
+        "Faster responses for production issues",
+        "Proactive guidance from a technical account manager (Enterprise)"
+      ],
+      "scenario": {
+        "company": "TicketDash",
+        "story": "Because outages during big sales are costly, TicketDash pays for Business Support. When a strange networking issue hit, they reached an AWS engineer by phone within an hour."
+      },
+      "certifications": [
+        "CLF",
+        "SOA"
+      ]
+    },
+    {
+      "id": "cost-explorer",
+      "name": "AWS Cost Explorer",
+      "shortName": "CE",
+      "category": "cost",
+      "level": "Beginner",
+      "definition": "Cost Explorer shows charts of your AWS spending over time, broken down by service, account or tag, and forecasts future costs.",
+      "usedFor": [
+        "Seeing which services cost the most",
+        "Tracking spending trends",
+        "Finding savings plan recommendations"
+      ],
+      "scenario": {
+        "company": "SnapFrame",
+        "story": "SnapFrame's bill jumped 40% one month. Cost Explorer showed the spike came from data transfer, which they fixed by adding CloudFront in front of S3."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "budgets",
+      "name": "AWS Budgets",
+      "shortName": "BUD",
+      "category": "cost",
+      "level": "Beginner",
+      "definition": "Budgets lets you set spending limits and sends alerts, or even takes automatic actions, when actual or forecast costs go over them.",
+      "usedFor": [
+        "Alerting when spending exceeds a limit",
+        "Per-team or per-project budgets",
+        "Tracking reserved instance and savings plan usage"
+      ],
+      "scenario": {
+        "company": "HelixGen Labs",
+        "story": "Each research grant has a fixed cloud budget. AWS Budgets emails the lab lead at 80% and 100% of the monthly limit so no grant overspends."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "pricing-calculator",
+      "name": "AWS Pricing Calculator",
+      "shortName": "$C",
+      "category": "cost",
+      "level": "Beginner",
+      "definition": "The Pricing Calculator is a free web tool to estimate how much an AWS setup will cost before you build it.",
+      "usedFor": [
+        "Estimating the cost of a new project",
+        "Comparing architecture options",
+        "Sharing estimates with finance teams"
+      ],
+      "scenario": {
+        "company": "Brightside Bakery Co.",
+        "story": "Before moving to AWS, the bakery owner used the Pricing Calculator to estimate the monthly cost of a small server and database, and confirmed it fit their budget."
+      },
+      "certifications": [
+        "CLF",
+        "SAA"
+      ]
+    },
+    {
+      "id": "savings-plans",
+      "name": "Savings Plans & Reserved Instances",
+      "shortName": "SP",
+      "category": "cost",
+      "level": "Intermediate",
+      "definition": "Savings Plans and Reserved Instances give large discounts compared with On-Demand prices in exchange for committing to steady usage for one or three years.",
+      "usedFor": [
+        "Lowering costs for always-on workloads",
+        "Discounts across EC2, Fargate and Lambda (Compute Savings Plans)",
+        "Reserving capacity in a specific Availability Zone"
+      ],
+      "scenario": {
+        "company": "LedgerLite",
+        "story": "LedgerLite's core servers run 24/7, so they bought a 1-year Compute Savings Plan. Their steady compute bill dropped significantly with no technical changes."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "cost-anomaly-detection",
+      "name": "AWS Cost Anomaly Detection",
+      "shortName": "CAD",
+      "category": "cost",
+      "level": "Intermediate",
+      "definition": "Cost Anomaly Detection uses machine learning to spot unusual spikes in your AWS spending and alerts you quickly, before they become large bills.",
+      "usedFor": [
+        "Catching runaway resources early",
+        "Detecting misconfigurations that cost money",
+        "Daily or instant spend alerts"
+      ],
+      "scenario": {
+        "company": "PlayForge Games",
+        "story": "A test script accidentally launched 50 large GPU instances. Cost Anomaly Detection flagged the spike the same day, saving PlayForge from a huge end-of-month bill."
+      },
+      "certifications": [
+        "CLF",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "data-exports",
+      "name": "AWS Data Exports (Cost & Usage Report)",
+      "shortName": "CUR",
+      "category": "cost",
+      "level": "Intermediate",
+      "definition": "Data Exports delivers your most detailed billing data, including the Cost and Usage Report, to S3, where you can analyze it with tools like Athena or QuickSight.",
+      "usedFor": [
+        "Detailed cost analysis per resource",
+        "Charging costs back to teams",
+        "Building custom cost dashboards"
+      ],
+      "scenario": {
+        "company": "MegaMart",
+        "story": "MegaMart's finance team exports detailed cost data to S3 and queries it with Athena to charge each department for exactly what it uses."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "billing-conductor",
+      "name": "AWS Billing Conductor",
+      "shortName": "ABC",
+      "category": "cost",
+      "level": "Expert",
+      "definition": "Billing Conductor lets you customize how AWS costs are shown and grouped, for example to create your own rates for internal teams or resale customers.",
+      "usedFor": [
+        "Showback and chargeback with custom rates",
+        "Resellers billing their own customers",
+        "Grouping accounts into billing groups"
+      ],
+      "scenario": {
+        "company": "CloudCrafters MSP",
+        "story": "CloudCrafters manages AWS for 40 small businesses. Billing Conductor lets them produce a custom bill for each client, including their own service margin."
+      },
+      "certifications": [
+        "SAP"
+      ]
+    },
+    {
+      "id": "marketplace",
+      "name": "AWS Marketplace",
+      "shortName": "MKT",
+      "category": "cost",
+      "level": "Beginner",
+      "definition": "AWS Marketplace is an online catalog where you can find, buy and deploy third-party software and data that runs on AWS, billed through your AWS account.",
+      "usedFor": [
+        "Buying security, monitoring or database software",
+        "Launching pre-configured software images",
+        "Consolidating vendor bills into AWS billing"
+      ],
+      "scenario": {
+        "company": "QuickQuote Insurance",
+        "story": "QuickQuote needed a third-party firewall appliance. They subscribed through AWS Marketplace, launched it in minutes, and it appears on their regular AWS bill."
+      },
+      "certifications": [
+        "CLF",
+        "SAA"
+      ]
+    },
+    {
+      "id": "athena",
+      "name": "Amazon Athena",
+      "shortName": "ATH",
+      "category": "analytics",
+      "level": "Beginner",
+      "definition": "Athena lets you run standard SQL queries directly on files stored in S3, with no servers or databases to set up. You pay per query based on data scanned.",
+      "usedFor": [
+        "Ad-hoc analysis of logs and data lakes",
+        "Querying CSV, JSON and Parquet files in S3",
+        "Investigating CloudTrail or VPC logs"
+      ],
+      "scenario": {
+        "company": "NewsPulse",
+        "story": "NewsPulse stores website clickstream logs in S3. Editors use Athena to ask questions like 'which articles were read most yesterday?' with simple SQL."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "DEA",
+        "MLA",
+        "SAP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "redshift",
+      "name": "Amazon Redshift",
+      "shortName": "RS",
+      "category": "analytics",
+      "level": "Intermediate",
+      "definition": "Redshift is a fast, managed data warehouse that analyzes huge amounts of structured data using SQL, ideal for business reporting.",
+      "usedFor": [
+        "Company-wide reporting and dashboards",
+        "Analyzing billions of sales or event records",
+        "Combining warehouse and data lake queries"
+      ],
+      "scenario": {
+        "company": "MegaMart",
+        "story": "MegaMart loads every sale from 900 stores into Redshift each night. Morning reports on sales by region and product are ready before stores open."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "emr",
+      "name": "Amazon EMR",
+      "shortName": "EMR",
+      "category": "analytics",
+      "level": "Expert",
+      "definition": "EMR runs big-data frameworks like Apache Spark, Hive and Presto on managed clusters or serverlessly, to process massive data sets.",
+      "usedFor": [
+        "Large-scale data processing with Spark",
+        "Transforming data lake data",
+        "Machine learning feature engineering at scale"
+      ],
+      "scenario": {
+        "company": "FleetTrack",
+        "story": "FleetTrack processes a year of GPS data to find the most efficient delivery routes. EMR runs the Spark job across 100 nodes in a few hours, then the cluster shuts down."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "glue",
+      "name": "AWS Glue",
+      "shortName": "GLU",
+      "category": "analytics",
+      "level": "Intermediate",
+      "definition": "Glue is a serverless data integration service that discovers, catalogs, cleans and transforms data (ETL) so it is ready for analytics and machine learning.",
+      "usedFor": [
+        "ETL jobs that prepare data for analysis",
+        "A central Data Catalog of your tables",
+        "Detecting data quality problems"
+      ],
+      "scenario": {
+        "company": "RecipeBox",
+        "story": "RecipeBox's raw app events arrive messy. A nightly Glue job cleans them, converts them to Parquet, and registers tables in the Data Catalog for Athena."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "DEA",
+        "MLA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "kinesis-data-streams",
+      "name": "Amazon Kinesis Data Streams",
+      "shortName": "KDS",
+      "category": "analytics",
+      "level": "Intermediate",
+      "definition": "Kinesis Data Streams collects and stores streaming data, like clicks or sensor readings, in real time so multiple apps can process it within seconds.",
+      "usedFor": [
+        "Real-time clickstream and event processing",
+        "Collecting IoT and log data",
+        "Feeding live dashboards and fraud detection"
+      ],
+      "scenario": {
+        "company": "PlayForge Games",
+        "story": "Every in-game action is sent to Kinesis Data Streams. One app updates live leaderboards while another looks for cheating patterns, both from the same stream."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "data-firehose",
+      "name": "Amazon Data Firehose",
+      "shortName": "FH",
+      "category": "analytics",
+      "level": "Intermediate",
+      "definition": "Data Firehose is the easiest way to load streaming data into destinations like S3, Redshift or OpenSearch, with no code needed for delivery.",
+      "usedFor": [
+        "Delivering logs and events to S3",
+        "Loading streaming data into Redshift",
+        "Converting data formats on the way"
+      ],
+      "scenario": {
+        "company": "NewsPulse",
+        "story": "NewsPulse sends clickstream events to Data Firehose, which batches them, converts them to Parquet and drops them into S3 every few minutes for Athena."
+      },
+      "certifications": [
+        "SAA",
+        "DVA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "managed-flink",
+      "name": "Amazon Managed Service for Apache Flink",
+      "shortName": "FLK",
+      "category": "analytics",
+      "level": "Expert",
+      "definition": "This service runs Apache Flink applications that analyze streaming data in real time, for example calculating rolling averages or detecting patterns as data arrives.",
+      "usedFor": [
+        "Real-time analytics on streams",
+        "Detecting anomalies within seconds",
+        "Continuous data transformation"
+      ],
+      "scenario": {
+        "company": "PayStream",
+        "story": "PayStream uses a Flink app to watch card transactions in real time. If one card is used in two countries within minutes, the app flags it instantly."
+      },
+      "certifications": [
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "msk",
+      "name": "Amazon MSK",
+      "shortName": "MSK",
+      "category": "analytics",
+      "level": "Expert",
+      "definition": "Amazon Managed Streaming for Apache Kafka (MSK) runs Apache Kafka, a popular event-streaming platform, without you managing Kafka clusters.",
+      "usedFor": [
+        "Event-driven microservices",
+        "Moving existing Kafka workloads to AWS",
+        "High-throughput data pipelines"
+      ],
+      "scenario": {
+        "company": "Atlas Shipping",
+        "story": "Atlas Shipping's container-tracking events flow through Kafka. Moving to MSK removed the burden of patching and scaling brokers from their small platform team."
+      },
+      "certifications": [
+        "SAA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "opensearch",
+      "name": "Amazon OpenSearch Service",
+      "shortName": "OS",
+      "category": "analytics",
+      "level": "Intermediate",
+      "definition": "OpenSearch Service runs OpenSearch, a search and analytics engine for full-text search, log analysis and vector search used in AI apps.",
+      "usedFor": [
+        "Search boxes for websites and apps",
+        "Log analytics and observability",
+        "Vector search for generative AI (RAG)"
+      ],
+      "scenario": {
+        "company": "RecipeBox",
+        "story": "RecipeBox's search bar used to be slow and literal. With OpenSearch, searching 'quick chiken pasta' finds the right recipes despite the typo, in milliseconds."
+      },
+      "certifications": [
+        "SAA",
+        "DVA",
+        "DEA",
+        "SAP",
+        "AIP"
+      ]
+    },
+    {
+      "id": "quicksight",
+      "name": "Amazon QuickSight",
+      "shortName": "QS",
+      "category": "analytics",
+      "level": "Beginner",
+      "definition": "QuickSight is a business intelligence service for building interactive dashboards and reports, including asking questions about data in plain English.",
+      "usedFor": [
+        "Business dashboards for non-technical users",
+        "Embedding analytics in apps",
+        "Natural-language questions about data"
+      ],
+      "scenario": {
+        "company": "Brightside Bakery Co.",
+        "story": "The bakery owner opens a QuickSight dashboard each morning to see yesterday's best-selling items and plan how much dough to prepare."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "lake-formation",
+      "name": "AWS Lake Formation",
+      "shortName": "LF",
+      "category": "analytics",
+      "level": "Expert",
+      "definition": "Lake Formation helps you build a secure data lake and manage fine-grained permissions, down to specific columns and rows, from one place.",
+      "usedFor": [
+        "Central permissions for data lake tables",
+        "Hiding sensitive columns from some users",
+        "Sharing data across accounts securely"
+      ],
+      "scenario": {
+        "company": "Riverside Hospital",
+        "story": "Researchers query Riverside's data lake, but Lake Formation hides patient names and addresses from them, while billing staff can see those columns."
+      },
+      "certifications": [
+        "SAA",
+        "DEA",
+        "SAP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "datazone",
+      "name": "Amazon DataZone",
+      "shortName": "DZ",
+      "category": "analytics",
+      "level": "Intermediate",
+      "definition": "DataZone is a data management service where teams can catalog, discover, share and govern data across the organization, like an internal data marketplace.",
+      "usedFor": [
+        "Finding trusted data sets across teams",
+        "Requesting and approving data access",
+        "Documenting data with business context"
+      ],
+      "scenario": {
+        "company": "MegaMart",
+        "story": "MegaMart's marketing analysts used to email around asking for data. Now they search the DataZone catalog, find the 'loyalty members' data set and request access in one click."
+      },
+      "certifications": [
+        "DEA"
+      ]
+    },
+    {
+      "id": "clean-rooms",
+      "name": "AWS Clean Rooms",
+      "shortName": "CR",
+      "category": "analytics",
+      "level": "Expert",
+      "definition": "Clean Rooms lets companies analyze their combined data together without either side seeing the other's raw data.",
+      "usedFor": [
+        "Joint marketing analysis with partners",
+        "Measuring ad campaigns privately",
+        "Collaborative research without sharing raw records"
+      ],
+      "scenario": {
+        "company": "FlashCart",
+        "story": "FlashCart and an advertising partner wanted to know how many ad viewers bought products. Clean Rooms gave them the overlap counts without exchanging customer lists."
+      },
+      "certifications": [
+        "DEA"
+      ]
+    },
+    {
+      "id": "data-exchange",
+      "name": "AWS Data Exchange",
+      "shortName": "ADX",
+      "category": "analytics",
+      "level": "Intermediate",
+      "definition": "Data Exchange lets you find, subscribe to and use third-party data sets, like weather, financial or location data, directly in AWS.",
+      "usedFor": [
+        "Buying external data for analytics",
+        "Enriching your data with market data",
+        "Receiving data updates automatically"
+      ],
+      "scenario": {
+        "company": "GreenLeaf Farms",
+        "story": "GreenLeaf subscribes to a weather data set through Data Exchange, so their models can combine forecasts with greenhouse sensor data."
+      },
+      "certifications": [
+        "DEA"
+      ]
+    },
+    {
+      "id": "kinesis-video-streams",
+      "name": "Amazon Kinesis Video Streams",
+      "shortName": "KVS",
+      "category": "analytics",
+      "level": "Intermediate",
+      "definition": "Kinesis Video Streams securely streams video from cameras and devices to AWS for storage, playback, and analysis with machine learning.",
+      "usedFor": [
+        "Streaming security camera footage",
+        "Video analytics with computer vision",
+        "Two-way real-time video with WebRTC"
+      ],
+      "scenario": {
+        "company": "SafeNest Homes",
+        "story": "SafeNest's smart doorbells stream video to Kinesis Video Streams. Homeowners watch live from their phones, and clips are analyzed to detect package deliveries."
+      },
+      "certifications": [
+        "SAA",
+        "DEA"
+      ]
+    },
+    {
+      "id": "sagemaker",
+      "name": "Amazon SageMaker AI",
+      "shortName": "SMK",
+      "category": "ml",
+      "level": "Intermediate",
+      "definition": "SageMaker AI is a platform to build, train and deploy machine learning models, providing notebooks, training infrastructure and hosted model endpoints in one place.",
+      "usedFor": [
+        "Training custom ML models",
+        "Deploying models as scalable endpoints",
+        "Managing the full ML lifecycle (MLOps)"
+      ],
+      "scenario": {
+        "company": "QuickQuote Insurance",
+        "story": "QuickQuote's data scientists trained a model to estimate claim costs in SageMaker AI, then deployed it as an endpoint that the quote app calls in real time."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "DEA",
+        "MLA",
+        "SAP",
+        "AIP"
+      ]
+    },
+    {
+      "id": "sagemaker-ground-truth",
+      "name": "Amazon SageMaker Ground Truth",
+      "shortName": "GT",
+      "category": "ml",
+      "level": "Intermediate",
+      "definition": "Ground Truth helps you label data, such as drawing boxes around objects in images, to create the training data that ML models learn from.",
+      "usedFor": [
+        "Labeling images, text and video",
+        "Combining human labelers with automatic labeling",
+        "Creating high-quality training data sets"
+      ],
+      "scenario": {
+        "company": "GreenLeaf Farms",
+        "story": "To teach a model to spot plant disease, GreenLeaf used Ground Truth to have workers label 20,000 leaf photos as healthy or diseased."
+      },
+      "certifications": [
+        "AIF",
+        "MLA"
+      ]
+    },
+    {
+      "id": "bedrock",
+      "name": "Amazon Bedrock",
+      "shortName": "BR",
+      "category": "ml",
+      "level": "Intermediate",
+      "definition": "Bedrock gives you access to leading generative AI foundation models from Amazon and other AI companies through one API, so you can build AI features without managing models.",
+      "usedFor": [
+        "Chatbots and writing assistants",
+        "Answering questions over your documents (RAG with Knowledge Bases)",
+        "Adding safety filters with Guardrails"
+      ],
+      "scenario": {
+        "company": "Hartwell Law Group",
+        "story": "Hartwell built an internal assistant on Bedrock that answers lawyers' questions using the firm's own precedent documents, with Guardrails blocking confidential client data from responses."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "DVA",
+        "MLA",
+        "SAP",
+        "AIP"
+      ]
+    },
+    {
+      "id": "bedrock-agentcore",
+      "name": "Amazon Bedrock AgentCore",
+      "shortName": "AC",
+      "category": "ml",
+      "level": "Expert",
+      "definition": "AgentCore provides the building blocks to run AI agents securely in production, including runtime, memory, identity, tool access and observability, for agents built with any framework.",
+      "usedFor": [
+        "Deploying AI agents at scale",
+        "Giving agents secure access to tools and APIs",
+        "Monitoring and tracing agent behavior"
+      ],
+      "scenario": {
+        "company": "Atlas Shipping",
+        "story": "Atlas Shipping built an agent that answers 'where is my container?' by calling tracking APIs. AgentCore hosts it, remembers each customer's context and logs every tool call."
+      },
+      "certifications": [
+        "AIP"
+      ]
+    },
+    {
+      "id": "amazon-q-developer",
+      "name": "Amazon Q Developer",
+      "shortName": "QD",
+      "category": "ml",
+      "level": "Beginner",
+      "definition": "Q Developer is a generative AI assistant for software developers and IT teams that helps write, explain, test and upgrade code, and answers questions about AWS.",
+      "usedFor": [
+        "Code suggestions in your editor",
+        "Explaining and debugging code",
+        "Upgrading old Java or .NET applications"
+      ],
+      "scenario": {
+        "company": "TutorLink",
+        "story": "TutorLink's junior developer used Q Developer in their IDE to generate unit tests and explain an unfamiliar part of the codebase, finishing a feature in half the time."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "DVA",
+        "AIP"
+      ]
+    },
+    {
+      "id": "amazon-q-business",
+      "name": "Amazon Q Business",
+      "shortName": "QB",
+      "category": "ml",
+      "level": "Beginner",
+      "definition": "Q Business is a generative AI assistant for employees that answers questions, summarizes content and completes tasks using your company's own data and apps.",
+      "usedFor": [
+        "Answering HR, policy and IT questions",
+        "Searching across wikis, drives and tickets",
+        "Summarizing documents and meetings"
+      ],
+      "scenario": {
+        "company": "Midland Logistics",
+        "story": "Midland connected Q Business to its policy wiki and file shares. Warehouse managers now ask 'what's our overtime policy?' and get an answer with a link to the source."
+      },
+      "certifications": [
+        "AIF",
+        "AIP"
+      ]
+    },
+    {
+      "id": "rekognition",
+      "name": "Amazon Rekognition",
+      "shortName": "REK",
+      "category": "ml",
+      "level": "Beginner",
+      "definition": "Rekognition analyzes images and videos with pre-trained AI, detecting objects, text, faces and unsafe content, with no machine learning expertise needed.",
+      "usedFor": [
+        "Moderating user-uploaded images",
+        "Identity verification with face comparison",
+        "Detecting objects and labels in media"
+      ],
+      "scenario": {
+        "company": "SnapFrame",
+        "story": "SnapFrame uses Rekognition to automatically flag inappropriate photos before they appear in public feeds, reducing the moderation team's workload."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "MLA"
+      ]
+    },
+    {
+      "id": "comprehend",
+      "name": "Amazon Comprehend",
+      "shortName": "CMP",
+      "category": "ml",
+      "level": "Beginner",
+      "definition": "Comprehend uses natural language processing to find meaning in text, such as sentiment, key phrases, topics, languages and personal information.",
+      "usedFor": [
+        "Analyzing customer review sentiment",
+        "Detecting and redacting personal data in text",
+        "Classifying support tickets"
+      ],
+      "scenario": {
+        "company": "FitTrack",
+        "story": "FitTrack runs app store reviews through Comprehend each week. The product team instantly sees whether sentiment improved after each release."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "MLA"
+      ]
+    },
+    {
+      "id": "textract",
+      "name": "Amazon Textract",
+      "shortName": "TXT",
+      "category": "ml",
+      "level": "Beginner",
+      "definition": "Textract automatically extracts printed text, handwriting, tables and form fields from scanned documents and PDFs.",
+      "usedFor": [
+        "Processing invoices and receipts",
+        "Digitizing forms and applications",
+        "Extracting data from ID documents"
+      ],
+      "scenario": {
+        "company": "QuickQuote Insurance",
+        "story": "Customers upload photos of repair invoices. Textract pulls out the totals and line items, so claims are processed in minutes instead of days."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "MLA"
+      ]
+    },
+    {
+      "id": "transcribe",
+      "name": "Amazon Transcribe",
+      "shortName": "TRN",
+      "category": "ml",
+      "level": "Beginner",
+      "definition": "Transcribe converts speech in audio and video files or live streams into text, with support for many languages and speaker identification.",
+      "usedFor": [
+        "Call center transcripts",
+        "Subtitles for videos",
+        "Meeting and medical notes"
+      ],
+      "scenario": {
+        "company": "StreamWave Media",
+        "story": "StreamWave uses Transcribe to generate subtitles for every new show, making content accessible and searchable."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "MLA"
+      ]
+    },
+    {
+      "id": "polly",
+      "name": "Amazon Polly",
+      "shortName": "POL",
+      "category": "ml",
+      "level": "Beginner",
+      "definition": "Polly turns text into lifelike speech in dozens of languages and voices.",
+      "usedFor": [
+        "Reading articles aloud",
+        "Voice prompts for phone systems",
+        "Accessibility features in apps"
+      ],
+      "scenario": {
+        "company": "NewsPulse",
+        "story": "NewsPulse adds a 'listen to this article' button powered by Polly, so commuters can hear stories while driving."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "MLA"
+      ]
+    },
+    {
+      "id": "translate",
+      "name": "Amazon Translate",
+      "shortName": "TRL",
+      "category": "ml",
+      "level": "Beginner",
+      "definition": "Translate provides fast, natural-sounding machine translation of text between dozens of languages.",
+      "usedFor": [
+        "Translating websites and product listings",
+        "Multilingual customer support chats",
+        "Translating user-generated content"
+      ],
+      "scenario": {
+        "company": "ShopNest",
+        "story": "ShopNest expanded to Spain and Brazil by running its product descriptions through Translate, then having native speakers review only the top sellers."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "MLA"
+      ]
+    },
+    {
+      "id": "lex",
+      "name": "Amazon Lex",
+      "shortName": "LEX",
+      "category": "ml",
+      "level": "Intermediate",
+      "definition": "Lex lets you build conversational chatbots and voice bots that understand what users want and respond, the same technology behind Alexa.",
+      "usedFor": [
+        "Customer service chatbots",
+        "Voice bots for phone lines with Amazon Connect",
+        "Self-service bookings and FAQs"
+      ],
+      "scenario": {
+        "company": "Maple Street Dental",
+        "story": "A Lex chatbot on the dental office's website handles appointment rescheduling at any hour, so staff spend less time on the phone."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA",
+        "MLA"
+      ]
+    },
+    {
+      "id": "kendra",
+      "name": "Amazon Kendra",
+      "shortName": "KEN",
+      "category": "ml",
+      "level": "Intermediate",
+      "definition": "Kendra is an intelligent enterprise search service that understands natural-language questions and finds answers across your company's documents.",
+      "usedFor": [
+        "Searching internal knowledge bases",
+        "Retrieval for generative AI apps (RAG)",
+        "Customer support self-service search"
+      ],
+      "scenario": {
+        "company": "Continental Rail",
+        "story": "Maintenance crews type 'how do I reset the door sensor on model X trains?' and Kendra finds the exact page across thousands of PDF manuals."
+      },
+      "certifications": [
+        "AIF",
+        "SAA",
+        "MLA",
+        "AIP"
+      ]
+    },
+    {
+      "id": "personalize",
+      "name": "Amazon Personalize",
+      "shortName": "PER",
+      "category": "ml",
+      "level": "Intermediate",
+      "definition": "Personalize creates real-time personalized recommendations, like 'you might also like', using the same type of technology Amazon.com uses.",
+      "usedFor": [
+        "Product and content recommendations",
+        "Personalized search ranking",
+        "Targeted marketing campaigns"
+      ],
+      "scenario": {
+        "company": "StreamWave Media",
+        "story": "StreamWave feeds viewing history to Personalize, which powers the 'Because you watched...' row and increased time spent watching."
+      },
+      "certifications": [
+        "AIF",
+        "SAA",
+        "MLA"
+      ]
+    },
+    {
+      "id": "augmented-ai",
+      "name": "Amazon Augmented AI (A2I)",
+      "shortName": "A2I",
+      "category": "ml",
+      "level": "Expert",
+      "definition": "Augmented AI adds human review to machine learning predictions, sending low-confidence results to people to check.",
+      "usedFor": [
+        "Human review of uncertain predictions",
+        "Quality control for document extraction",
+        "Content moderation workflows"
+      ],
+      "scenario": {
+        "company": "QuickQuote Insurance",
+        "story": "When Textract is unsure about an invoice amount, A2I sends it to a claims clerk to confirm, keeping accuracy high without reviewing everything by hand."
+      },
+      "certifications": [
+        "AIF",
+        "MLA"
+      ]
+    },
+    {
+      "id": "healthlake",
+      "name": "AWS HealthLake",
+      "shortName": "HL",
+      "category": "ml",
+      "level": "Expert",
+      "definition": "HealthLake stores, transforms and analyzes health data in the industry-standard FHIR format, helping healthcare organizations make sense of medical records.",
+      "usedFor": [
+        "Storing patient data in FHIR format",
+        "Extracting medical information from clinical notes",
+        "Population health analytics"
+      ],
+      "scenario": {
+        "company": "Riverside Hospital",
+        "story": "Riverside loads patient records into HealthLake to identify patients at risk of diabetes and invite them for early screening."
+      },
+      "certifications": [
+        "AIF"
+      ]
+    },
+    {
+      "id": "sqs",
+      "name": "Amazon SQS",
+      "shortName": "SQS",
+      "category": "integration",
+      "level": "Beginner",
+      "definition": "Amazon Simple Queue Service (SQS) is a message queue: one part of your app drops messages in, another part picks them up and processes them when it's ready.",
+      "usedFor": [
+        "Decoupling parts of an application",
+        "Smoothing out traffic spikes",
+        "Reliable background job processing"
+      ],
+      "scenario": {
+        "company": "Brightside Bakery Co.",
+        "story": "When orders flood in, the website puts each order in an SQS queue. The kitchen-printing system works through the queue steadily, so no order is ever lost."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "sns",
+      "name": "Amazon SNS",
+      "shortName": "SNS",
+      "category": "integration",
+      "level": "Beginner",
+      "definition": "Amazon Simple Notification Service (SNS) sends a message to many subscribers at once (publish/subscribe), including other apps, email, SMS or mobile push.",
+      "usedFor": [
+        "Fan-out of events to multiple services",
+        "Alerts by email or SMS",
+        "Mobile push notifications"
+      ],
+      "scenario": {
+        "company": "TicketDash",
+        "story": "When an order is placed, TicketDash publishes one SNS message. The email service, the fraud checker and the analytics pipeline each receive their own copy."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "eventbridge",
+      "name": "Amazon EventBridge",
+      "shortName": "EVB",
+      "category": "integration",
+      "level": "Intermediate",
+      "definition": "EventBridge is a serverless event bus that routes events from your apps, AWS services and SaaS tools to the right targets based on rules, and can run scheduled jobs.",
+      "usedFor": [
+        "Event-driven architectures",
+        "Reacting to AWS events like 'instance stopped'",
+        "Scheduling tasks with EventBridge Scheduler"
+      ],
+      "scenario": {
+        "company": "FitTrack",
+        "story": "When a user finishes a 30-day streak, an event goes to EventBridge, which triggers a Lambda to award a badge and a Step Functions flow to send a reward email."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "SAP",
+        "DOP",
+        "SCS"
+      ]
+    },
+    {
+      "id": "step-functions",
+      "name": "AWS Step Functions",
+      "shortName": "SF",
+      "category": "integration",
+      "level": "Intermediate",
+      "definition": "Step Functions coordinates multiple steps of a process into a visual workflow, handling retries, errors and waiting, so you don't write that logic yourself.",
+      "usedFor": [
+        "Order processing and approval workflows",
+        "Data processing pipelines",
+        "Orchestrating Lambda functions and AWS services"
+      ],
+      "scenario": {
+        "company": "ShopNest",
+        "story": "ShopNest's checkout is a Step Functions workflow: charge the card, reserve stock, create the shipment, and automatically refund if any step fails."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SOA",
+        "DEA",
+        "SAP",
+        "DOP",
+        "AIP"
+      ]
+    },
+    {
+      "id": "amazon-mq",
+      "name": "Amazon MQ",
+      "shortName": "MQ",
+      "category": "integration",
+      "level": "Intermediate",
+      "definition": "Amazon MQ is a managed message broker for Apache ActiveMQ and RabbitMQ, so existing apps using standard messaging protocols can move to AWS without rewriting.",
+      "usedFor": [
+        "Migrating apps that use ActiveMQ or RabbitMQ",
+        "Industry-standard protocols like AMQP, MQTT and JMS",
+        "Hybrid messaging with on-premises systems"
+      ],
+      "scenario": {
+        "company": "Continental Rail",
+        "story": "Continental Rail's legacy ticketing system talks over ActiveMQ. Amazon MQ let them move it to AWS without changing a single line of messaging code."
+      },
+      "certifications": [
+        "SAA",
+        "DVA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "appflow",
+      "name": "Amazon AppFlow",
+      "shortName": "AF",
+      "category": "integration",
+      "level": "Intermediate",
+      "definition": "AppFlow moves data securely between SaaS apps like Salesforce, Slack or Zendesk and AWS services like S3 or Redshift, with no code.",
+      "usedFor": [
+        "Syncing CRM data into a data lake",
+        "Scheduled or event-based data transfers",
+        "Combining SaaS data for analytics"
+      ],
+      "scenario": {
+        "company": "TutorLink",
+        "story": "TutorLink's sales team lives in Salesforce. AppFlow copies new leads to S3 every hour so analysts can combine them with app usage data."
+      },
+      "certifications": [
+        "SAA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "mwaa",
+      "name": "Amazon MWAA",
+      "shortName": "AIR",
+      "category": "integration",
+      "level": "Expert",
+      "definition": "Amazon Managed Workflows for Apache Airflow (MWAA) runs Apache Airflow, a popular tool for scheduling and orchestrating data pipelines, without managing servers.",
+      "usedFor": [
+        "Orchestrating complex data pipelines",
+        "Scheduling ETL and ML jobs",
+        "Moving existing Airflow workflows to AWS"
+      ],
+      "scenario": {
+        "company": "HelixGen Labs",
+        "story": "HelixGen's nightly pipeline has 40 dependent steps. MWAA runs their existing Airflow DAGs, retrying failed steps and alerting the team only when needed."
+      },
+      "certifications": [
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "codepipeline",
+      "name": "AWS CodePipeline",
+      "shortName": "CP",
+      "category": "devtools",
+      "level": "Intermediate",
+      "definition": "CodePipeline automates the steps to release software (build, test and deploy) every time you change your code, known as continuous delivery.",
+      "usedFor": [
+        "Automated release pipelines",
+        "Approval steps before production",
+        "Connecting source, build and deploy tools"
+      ],
+      "scenario": {
+        "company": "FitTrack",
+        "story": "Every time a developer merges code, CodePipeline builds it, runs tests, deploys to staging, waits for a manager's approval, then releases to production."
+      },
+      "certifications": [
+        "CLF",
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "codebuild",
+      "name": "AWS CodeBuild",
+      "shortName": "CB",
+      "category": "devtools",
+      "level": "Intermediate",
+      "definition": "CodeBuild compiles source code, runs tests and produces software packages, using fresh build servers that scale automatically and cost nothing when idle.",
+      "usedFor": [
+        "Compiling and testing code",
+        "Building container images",
+        "Running CI jobs without managing build servers"
+      ],
+      "scenario": {
+        "company": "ShopNest",
+        "story": "ShopNest retired its overloaded Jenkins server. CodeBuild now runs dozens of builds in parallel, so developers no longer wait in a queue."
+      },
+      "certifications": [
+        "CLF",
+        "DVA",
+        "SOA",
+        "DOP"
+      ]
+    },
+    {
+      "id": "codedeploy",
+      "name": "AWS CodeDeploy",
+      "shortName": "CD",
+      "category": "devtools",
+      "level": "Intermediate",
+      "definition": "CodeDeploy automates deploying application updates to EC2, on-premises servers, Lambda and ECS, with strategies like rolling and blue/green to avoid downtime.",
+      "usedFor": [
+        "Zero-downtime deployments",
+        "Gradual traffic shifting for Lambda and ECS",
+        "Automatic rollback on failure"
+      ],
+      "scenario": {
+        "company": "TicketDash",
+        "story": "TicketDash deploys with CodeDeploy blue/green. If error alarms fire after the switch, CodeDeploy automatically routes traffic back to the old version."
+      },
+      "certifications": [
+        "CLF",
+        "DVA",
+        "SOA",
+        "DOP"
+      ]
+    },
+    {
+      "id": "codeartifact",
+      "name": "AWS CodeArtifact",
+      "shortName": "CA",
+      "category": "devtools",
+      "level": "Intermediate",
+      "definition": "CodeArtifact is a managed repository for software packages (like npm, PyPI and Maven) so teams can store and share approved libraries securely.",
+      "usedFor": [
+        "Hosting private internal packages",
+        "Caching public packages for reliability",
+        "Controlling which open-source packages are allowed"
+      ],
+      "scenario": {
+        "company": "NorthBank Financial",
+        "story": "NorthBank developers install packages only through CodeArtifact, which caches approved open-source versions and hosts the bank's internal libraries."
+      },
+      "certifications": [
+        "DVA",
+        "DOP"
+      ]
+    },
+    {
+      "id": "x-ray",
+      "name": "AWS X-Ray",
+      "shortName": "XR",
+      "category": "devtools",
+      "level": "Intermediate",
+      "definition": "X-Ray traces requests as they travel through your application's services, showing where time is spent and where errors happen.",
+      "usedFor": [
+        "Finding slow parts of distributed apps",
+        "Debugging errors across microservices",
+        "Visualizing service dependencies"
+      ],
+      "scenario": {
+        "company": "ShopNest",
+        "story": "Checkout felt slow but every service looked fine alone. X-Ray traces revealed the payment service was calling a fraud API three times per request."
+      },
+      "certifications": [
+        "SAA",
+        "DVA",
+        "SOA",
+        "DOP"
+      ]
+    },
+    {
+      "id": "cdk",
+      "name": "AWS CDK",
+      "shortName": "CDK",
+      "category": "devtools",
+      "level": "Intermediate",
+      "definition": "The AWS Cloud Development Kit (CDK) lets you define cloud infrastructure using familiar programming languages like TypeScript or Python, then deploys it through CloudFormation.",
+      "usedFor": [
+        "Infrastructure as code in a real programming language",
+        "Reusable infrastructure components",
+        "Testing infrastructure like application code"
+      ],
+      "scenario": {
+        "company": "FitTrack",
+        "story": "FitTrack's developers prefer TypeScript over YAML. With CDK they built a reusable 'API service' component that each team uses to launch new services in a few lines."
+      },
+      "certifications": [
+        "DVA",
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "sam",
+      "name": "AWS SAM",
+      "shortName": "SAM",
+      "category": "devtools",
+      "level": "Intermediate",
+      "definition": "The AWS Serverless Application Model (SAM) is a framework with a short template syntax and CLI for building, testing and deploying serverless apps.",
+      "usedFor": [
+        "Defining Lambda functions, APIs and tables concisely",
+        "Testing serverless apps locally",
+        "Deploying serverless apps with one command"
+      ],
+      "scenario": {
+        "company": "SnapFrame",
+        "story": "SnapFrame's thumbnail service is a SAM template of 30 lines. Developers test the function locally with SAM CLI, then run 'sam deploy' to ship it."
+      },
+      "certifications": [
+        "DVA",
+        "SOA",
+        "DOP"
+      ]
+    },
+    {
+      "id": "cli",
+      "name": "AWS CLI",
+      "shortName": "CLI",
+      "category": "devtools",
+      "level": "Beginner",
+      "definition": "The AWS Command Line Interface (CLI) lets you control AWS services by typing commands in a terminal, which makes it easy to script and automate tasks.",
+      "usedFor": [
+        "Automating routine tasks with scripts",
+        "Managing resources quickly from a terminal",
+        "Using AWS in CI/CD pipelines"
+      ],
+      "scenario": {
+        "company": "Pagewise Publishing",
+        "story": "Pagewise's admin wrote a short CLI script that copies the day's uploaded images to a backup bucket every night."
+      },
+      "certifications": [
+        "CLF",
+        "DVA",
+        "SOA",
+        "DOP"
+      ]
+    },
+    {
+      "id": "cloudshell",
+      "name": "AWS CloudShell",
+      "shortName": "CS",
+      "category": "devtools",
+      "level": "Beginner",
+      "definition": "CloudShell is a browser-based terminal inside the AWS Console, already signed in with your permissions and preloaded with the AWS CLI and common tools.",
+      "usedFor": [
+        "Running CLI commands without installing anything",
+        "Quick scripts and troubleshooting",
+        "Learning AWS commands safely"
+      ],
+      "scenario": {
+        "company": "Maple Street Dental",
+        "story": "The IT helper needed to run one CLI command from a borrowed laptop. CloudShell opened a ready-to-use terminal in the browser in seconds."
+      },
+      "certifications": [
+        "CLF",
+        "SOA"
+      ]
+    },
+    {
+      "id": "fault-injection-service",
+      "name": "AWS Fault Injection Service",
+      "shortName": "FIS",
+      "category": "devtools",
+      "level": "Expert",
+      "definition": "Fault Injection Service runs controlled 'chaos engineering' experiments, such as stopping instances or adding latency, to test how your app copes with failures.",
+      "usedFor": [
+        "Testing resilience before real outages",
+        "Validating alarms and recovery procedures",
+        "Game days for operations teams"
+      ],
+      "scenario": {
+        "company": "PayStream",
+        "story": "PayStream used Fault Injection Service to shut down one Availability Zone in a test. They discovered a hard-coded address and fixed it before a real outage could expose it."
+      },
+      "certifications": [
+        "SOA",
+        "SAP",
+        "DOP"
+      ]
+    },
+    {
+      "id": "amplify",
+      "name": "AWS Amplify",
+      "shortName": "AMP",
+      "category": "frontend",
+      "level": "Beginner",
+      "definition": "Amplify is a set of tools to build, connect and host full-stack web and mobile apps quickly, including hosting, authentication, data and storage.",
+      "usedFor": [
+        "Hosting React, Vue, Next.js and other web apps",
+        "Adding login, APIs and storage to apps",
+        "Preview environments for each branch"
+      ],
+      "scenario": {
+        "company": "RecipeBox",
+        "story": "RecipeBox's front-end team connected their Git repo to Amplify Hosting. Every pull request gets its own preview URL, and merges go live automatically."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA"
+      ]
+    },
+    {
+      "id": "appsync",
+      "name": "AWS AppSync",
+      "shortName": "APS",
+      "category": "frontend",
+      "level": "Intermediate",
+      "definition": "AppSync lets you create managed GraphQL and real-time APIs, so apps can fetch exactly the data they need from multiple sources in one request.",
+      "usedFor": [
+        "GraphQL APIs for web and mobile apps",
+        "Real-time updates like live chat or scores",
+        "Offline data sync for mobile apps"
+      ],
+      "scenario": {
+        "company": "ArenaVerse",
+        "story": "ArenaVerse's app shows live match scores. AppSync subscriptions push updates to every fan's phone the instant a goal is scored."
+      },
+      "certifications": [
+        "SAA",
+        "DVA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "device-farm",
+      "name": "AWS Device Farm",
+      "shortName": "DF",
+      "category": "frontend",
+      "level": "Intermediate",
+      "definition": "Device Farm tests your mobile and web apps on real phones, tablets and browsers hosted by AWS, so you don't need a drawer full of devices.",
+      "usedFor": [
+        "Automated testing on many real devices",
+        "Reproducing device-specific bugs",
+        "Cross-browser testing for web apps"
+      ],
+      "scenario": {
+        "company": "FitTrack",
+        "story": "A crash only happened on certain older Android phones. Device Farm ran FitTrack's tests on 30 real devices and pinpointed the affected models."
+      },
+      "certifications": [
+        "DVA"
+      ]
+    },
+    {
+      "id": "location-service",
+      "name": "Amazon Location Service",
+      "shortName": "LOC",
+      "category": "frontend",
+      "level": "Intermediate",
+      "definition": "Location Service adds maps, address search, routing and geofencing to your apps, while keeping location data private within AWS.",
+      "usedFor": [
+        "Maps and store locators",
+        "Delivery route planning",
+        "Alerts when devices enter or leave an area (geofences)"
+      ],
+      "scenario": {
+        "company": "FleetTrack",
+        "story": "FleetTrack shows customers a live map of their delivery van and sends an alert when the van enters a geofence around their street."
+      },
+      "certifications": [
+        "SAA",
+        "DVA"
+      ]
+    },
+    {
+      "id": "dms",
+      "name": "AWS Database Migration Service",
+      "shortName": "DMS",
+      "category": "migration",
+      "level": "Intermediate",
+      "definition": "DMS moves databases to AWS quickly and securely while the source database stays running, and can convert between different database engines.",
+      "usedFor": [
+        "Migrating databases with minimal downtime",
+        "Switching engines, e.g. Oracle to PostgreSQL",
+        "Ongoing replication into data lakes"
+      ],
+      "scenario": {
+        "company": "Continental Rail",
+        "story": "Continental Rail moved a 4 TB Oracle database to Aurora PostgreSQL. DMS kept the copies in sync for weeks, so the final switch took only minutes of downtime."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "application-migration-service",
+      "name": "AWS Application Migration Service",
+      "shortName": "MGN",
+      "category": "migration",
+      "level": "Intermediate",
+      "definition": "Application Migration Service 'lifts and shifts' servers from on-premises or other clouds to AWS by continuously copying them and launching them as EC2 instances.",
+      "usedFor": [
+        "Rehosting many servers quickly",
+        "Testing migrated servers before cutover",
+        "Data center exits"
+      ],
+      "scenario": {
+        "company": "Midland Logistics",
+        "story": "Midland's data center lease was ending. Application Migration Service copied 300 servers to AWS over two months, with each cutover taking under an hour."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "datasync",
+      "name": "AWS DataSync",
+      "shortName": "DS",
+      "category": "migration",
+      "level": "Intermediate",
+      "definition": "DataSync moves large amounts of files between on-premises storage, other clouds and AWS storage services quickly, with built-in scheduling and verification.",
+      "usedFor": [
+        "Migrating file shares to S3, EFS or FSx",
+        "Recurring data transfers",
+        "Copying data for analytics or backup"
+      ],
+      "scenario": {
+        "company": "HelixGen Labs",
+        "story": "HelixGen's lab sequencers produce terabytes of data daily. DataSync automatically copies the new files to S3 every night for analysis."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "transfer-family",
+      "name": "AWS Transfer Family",
+      "shortName": "SFTP",
+      "category": "migration",
+      "level": "Intermediate",
+      "definition": "Transfer Family provides managed SFTP, FTPS, FTP and AS2 servers that store files directly in S3 or EFS, for exchanging files with partners.",
+      "usedFor": [
+        "Receiving files from partners over SFTP",
+        "Replacing old FTP servers",
+        "B2B file exchange"
+      ],
+      "scenario": {
+        "company": "NorthBank Financial",
+        "story": "Partner banks send daily transaction files over SFTP. Transfer Family receives them straight into S3, where a Lambda function starts processing immediately."
+      },
+      "certifications": [
+        "SAA",
+        "SOA",
+        "DEA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "snowball",
+      "name": "AWS Snowball",
+      "shortName": "SNW",
+      "category": "migration",
+      "level": "Intermediate",
+      "definition": "Snowball is a rugged physical device AWS ships to you: you load huge amounts of data onto it and ship it back, which can be faster than uploading over the internet.",
+      "usedFor": [
+        "Moving petabytes of data to AWS",
+        "Data transfer from sites with poor connectivity",
+        "Edge computing in remote locations"
+      ],
+      "scenario": {
+        "company": "StreamWave Media",
+        "story": "StreamWave had 500 TB of film archives on tapes and disks. Uploading would take months, so they loaded Snowball devices and shipped them to AWS."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "application-discovery-service",
+      "name": "AWS Application Discovery Service",
+      "shortName": "ADS",
+      "category": "migration",
+      "level": "Intermediate",
+      "definition": "Application Discovery Service collects information about your on-premises servers, like their specs, usage and connections, to help plan a migration.",
+      "usedFor": [
+        "Inventorying servers before migrating",
+        "Finding dependencies between applications",
+        "Right-sizing AWS resources for migrated servers"
+      ],
+      "scenario": {
+        "company": "Midland Logistics",
+        "story": "Before migrating, Midland used Application Discovery Service and found that two 'unrelated' apps shared a database, so they planned to move them together."
+      },
+      "certifications": [
+        "SAA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "iot-core",
+      "name": "AWS IoT Core",
+      "shortName": "IoT",
+      "category": "iot",
+      "level": "Intermediate",
+      "definition": "IoT Core securely connects billions of internet-connected devices to the cloud, so they can send data and receive commands.",
+      "usedFor": [
+        "Collecting data from sensors and machines",
+        "Sending commands to devices",
+        "Routing device data to other AWS services"
+      ],
+      "scenario": {
+        "company": "SafeNest Homes",
+        "story": "SafeNest's smart thermostats connect to IoT Core. Homeowners change the temperature from their phone and the command reaches the thermostat in under a second."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "greengrass",
+      "name": "AWS IoT Greengrass",
+      "shortName": "GG",
+      "category": "iot",
+      "level": "Expert",
+      "definition": "Greengrass is software that runs on edge devices, letting them process data and run code or ML models locally, even when offline, while syncing with the cloud.",
+      "usedFor": [
+        "Local processing on factory or field equipment",
+        "Running ML models at the edge",
+        "Managing software on device fleets"
+      ],
+      "scenario": {
+        "company": "Precision Motors",
+        "story": "Precision Motors runs a defect-detection model with Greengrass on cameras along the assembly line, so faulty parts are flagged instantly even if the internet drops."
+      },
+      "certifications": [
+        "SAA",
+        "SAP"
+      ]
+    },
+    {
+      "id": "iot-sitewise",
+      "name": "AWS IoT SiteWise",
+      "shortName": "ISW",
+      "category": "iot",
+      "level": "Expert",
+      "definition": "IoT SiteWise collects, organizes and analyzes data from industrial equipment, helping factories monitor performance and spot problems.",
+      "usedFor": [
+        "Monitoring industrial equipment",
+        "Calculating factory performance metrics",
+        "Dashboards for plant operators"
+      ],
+      "scenario": {
+        "company": "BlueCurrent Energy",
+        "story": "BlueCurrent streams vibration and speed data from 200 wind turbines into SiteWise, and technicians see which turbines need maintenance before they break."
+      },
+      "certifications": [
+        "SAP"
+      ]
+    },
+    {
+      "id": "iot-device-defender",
+      "name": "AWS IoT Device Defender",
+      "shortName": "IDD",
+      "category": "iot",
+      "level": "Expert",
+      "definition": "Device Defender audits the security settings of your IoT devices and watches their behavior to detect anything unusual, such as a hacked device.",
+      "usedFor": [
+        "Auditing device security configuration",
+        "Detecting abnormal device behavior",
+        "Alerting on compromised devices"
+      ],
+      "scenario": {
+        "company": "SafeNest Homes",
+        "story": "Device Defender noticed a batch of doorbells suddenly sending far more data than usual. SafeNest isolated them and pushed a firmware fix."
+      },
+      "certifications": [
+        "SCS"
+      ]
+    },
+    {
+      "id": "iot-device-management",
+      "name": "AWS IoT Device Management",
+      "shortName": "IDM",
+      "category": "iot",
+      "level": "Intermediate",
+      "definition": "Device Management helps you register, organize, monitor and remotely update large fleets of IoT devices.",
+      "usedFor": [
+        "Onboarding devices in bulk",
+        "Over-the-air firmware updates",
+        "Searching and grouping devices"
+      ],
+      "scenario": {
+        "company": "GreenLeaf Farms",
+        "story": "GreenLeaf rolled out a firmware update to 5,000 greenhouse sensors in stages using Device Management, starting with 1% to make sure nothing broke."
+      },
+      "certifications": [
+        "SAP"
+      ]
+    },
+    {
+      "id": "workspaces",
+      "name": "Amazon WorkSpaces",
+      "shortName": "WS",
+      "category": "enduser",
+      "level": "Beginner",
+      "definition": "WorkSpaces provides virtual desktops in the cloud: employees log in from any device to a full Windows or Linux desktop running in AWS.",
+      "usedFor": [
+        "Secure remote work desktops",
+        "Contractors and temporary staff",
+        "Keeping data off personal devices"
+      ],
+      "scenario": {
+        "company": "Hartwell Law Group",
+        "story": "Hartwell's lawyers access their WorkSpaces desktop from home laptops. Client files never leave AWS, which keeps the firm's insurer happy."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "SOA"
+      ]
+    },
+    {
+      "id": "appstream",
+      "name": "Amazon AppStream 2.0",
+      "shortName": "AS2",
+      "category": "enduser",
+      "level": "Intermediate",
+      "definition": "AppStream 2.0 streams desktop applications to a web browser, so users can run software without installing it on their own computer.",
+      "usedFor": [
+        "Delivering heavy design or engineering software",
+        "Software for students on any device",
+        "Free trials of desktop apps"
+      ],
+      "scenario": {
+        "company": "Granite & Co. Architects",
+        "story": "Interns use the firm's CAD software streamed through AppStream 2.0 on basic laptops, instead of the firm buying each of them an expensive workstation."
+      },
+      "certifications": [
+        "CLF",
+        "SAA"
+      ]
+    },
+    {
+      "id": "workspaces-secure-browser",
+      "name": "Amazon WorkSpaces Secure Browser",
+      "shortName": "WSB",
+      "category": "enduser",
+      "level": "Intermediate",
+      "definition": "WorkSpaces Secure Browser gives employees a secure, cloud-hosted web browser to reach internal websites and SaaS apps, without data being stored on their device.",
+      "usedFor": [
+        "Safe access to internal web apps from any device",
+        "Contractor access without a VPN",
+        "Reducing risk from personal devices"
+      ],
+      "scenario": {
+        "company": "QuickQuote Insurance",
+        "story": "Third-party claims assessors use WorkSpaces Secure Browser to access QuickQuote's claims portal, and nothing can be downloaded to their personal laptops."
+      },
+      "certifications": [
+        "SAA",
+        "SCS"
+      ]
+    },
+    {
+      "id": "connect",
+      "name": "Amazon Connect",
+      "shortName": "CNX",
+      "category": "enduser",
+      "level": "Intermediate",
+      "definition": "Amazon Connect is a cloud contact center: set up phone lines, chat, routing and AI-powered agent help in minutes, paying only for what you use.",
+      "usedFor": [
+        "Customer service phone and chat centers",
+        "Self-service IVR menus with Lex",
+        "Real-time call analytics"
+      ],
+      "scenario": {
+        "company": "PayStream",
+        "story": "PayStream set up a support line in Amazon Connect in a day. Calls are routed by language, and agents see live call transcripts and suggested answers."
+      },
+      "certifications": [
+        "CLF",
+        "AIF",
+        "SAA"
+      ]
+    },
+    {
+      "id": "ses",
+      "name": "Amazon SES",
+      "shortName": "SES",
+      "category": "enduser",
+      "level": "Beginner",
+      "definition": "Amazon Simple Email Service (SES) sends and receives email at scale, such as order confirmations, password resets and newsletters.",
+      "usedFor": [
+        "Transactional emails from apps",
+        "Marketing and bulk email",
+        "Receiving and processing incoming email"
+      ],
+      "scenario": {
+        "company": "TicketDash",
+        "story": "Every ticket purchase triggers an SES email with the tickets attached. SES sends millions of these on big sale days."
+      },
+      "certifications": [
+        "CLF",
+        "SAA",
+        "DVA"
+      ]
+    },
+    {
+      "id": "end-user-messaging",
+      "name": "AWS End User Messaging",
+      "shortName": "EUM",
+      "category": "enduser",
+      "level": "Intermediate",
+      "definition": "End User Messaging sends SMS, voice and mobile push messages to your customers worldwide, for things like one-time passcodes and alerts.",
+      "usedFor": [
+        "SMS verification codes",
+        "Appointment reminders",
+        "Push notifications to mobile apps"
+      ],
+      "scenario": {
+        "company": "Maple Street Dental",
+        "story": "Patients get an SMS reminder the day before their appointment, sent through End User Messaging, which cut no-shows noticeably."
+      },
+      "certifications": [
+        "SAA",
+        "DVA"
+      ]
+    },
+    {
+      "id": "workmail",
+      "name": "Amazon WorkMail",
+      "shortName": "WM",
+      "category": "enduser",
+      "level": "Beginner",
+      "definition": "WorkMail is a secure, managed business email and calendar service that works with desktop and mobile email apps like Outlook.",
+      "usedFor": [
+        "Company email and calendars",
+        "Replacing self-hosted email servers",
+        "Encrypted email with retention controls"
+      ],
+      "scenario": {
+        "company": "Brightside Bakery Co.",
+        "story": "The bakery moved from personal email addresses to WorkMail, giving every staff member a professional address and a shared order calendar."
+      },
+      "certifications": [
+        "CLF"
+      ]
+    }
+  ]
+}
